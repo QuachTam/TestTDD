@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EB326671769A8D90017D8F2 /* ObjCal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EB326661769A8D90017D8F2 /* ObjCal.m */; };
 		6ED09D331765C03E00309647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D321765C03E00309647 /* UIKit.framework */; };
 		6ED09D351765C03E00309647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D341765C03E00309647 /* Foundation.framework */; };
 		6ED09D371765C03E00309647 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D361765C03E00309647 /* CoreGraphics.framework */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		3D148740F6214C7491F890AF /* libPods-TestTDDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestTDDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A22D8EF72743ABBF989852 /* Pods-TestTDDTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTDDTests.xcconfig"; path = "Pods/Pods-TestTDDTests.xcconfig"; sourceTree = SOURCE_ROOT; };
+		6EB326651769A8D90017D8F2 /* ObjCal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCal.h; sourceTree = "<group>"; };
+		6EB326661769A8D90017D8F2 /* ObjCal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCal.m; sourceTree = "<group>"; };
 		6ED09D2F1765C03E00309647 /* TestTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED09D321765C03E00309647 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6ED09D341765C03E00309647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -127,6 +130,8 @@
 				6ED09D4A1765C03E00309647 /* ViewController.h */,
 				6ED09D4B1765C03E00309647 /* ViewController.m */,
 				6ED09D4D1765C03E00309647 /* ViewController.xib */,
+				6EB326651769A8D90017D8F2 /* ObjCal.h */,
+				6EB326661769A8D90017D8F2 /* ObjCal.m */,
 				6ED09D391765C03E00309647 /* Supporting Files */,
 			);
 			path = TestTDD;
@@ -307,6 +312,7 @@
 				6ED09D3F1765C03E00309647 /* main.m in Sources */,
 				6ED09D431765C03E00309647 /* AppDelegate.m in Sources */,
 				6ED09D4C1765C03E00309647 /* ViewController.m in Sources */,
+				6EB326671769A8D90017D8F2 /* ObjCal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
