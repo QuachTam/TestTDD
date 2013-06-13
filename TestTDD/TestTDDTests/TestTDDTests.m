@@ -9,7 +9,9 @@
 
 
 SPEC_BEGIN(match)
-    describe(@"Adding contact", ^{
-        
+    describe(@"Test TDD 13.06", ^{
+        it(@"string content ", ^{
+            [[theValue([ObjCal cal:@""]) shoud] equal:theValue(0)];
+        })
     });
 SPEC_END
