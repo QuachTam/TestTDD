@@ -13,5 +13,8 @@ SPEC_BEGIN(match)
         it(@"string content ", ^{
             [[theValue([ObjCal cal:@""]) should] equal:theValue(0)];
         });
+        it(@"string content one number", ^{
+            [[theValue([ObjCal cal:@"1"]) should] equal:theValue(1)];
+        });
     });
 SPEC_END

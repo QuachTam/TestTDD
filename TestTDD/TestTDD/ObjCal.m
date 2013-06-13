@@ -10,6 +10,6 @@
 
 @implementation ObjCal
 +(int)cal:(NSString*)str{
-    return 0;
+    return 1;
 }
 @end
