@@ -17,5 +17,9 @@ SPEC_BEGIN(calculator)
         it(@"input value !nil ", ^{
             [[theValue([Cal1806 cal:@"1"]) should] equal:theValue(1)];
         });
+        
+        it(@"input value 1,2", ^{
+            [[theValue([Cal1806 cal:@"1,2"]) should] equal:theValue(3)];
+        });
     });
 SPEC_END
