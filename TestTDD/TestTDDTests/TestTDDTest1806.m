@@ -8,5 +8,9 @@
 #import "Kiwi.h"
 
 SPEC_BEGIN(calculator)
-    
+    describe(@"calculator value", ^{
+        it(@"input value nil return 0", ^{
+            [[theValue([Cal1806 cal:@""]) should] equal:theValue(0)];
+        });
+    });
 SPEC_END
