@@ -24,8 +24,8 @@
 		6ED09D591765C03F00309647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D341765C03E00309647 /* Foundation.framework */; };
 		6ED09D611765C03F00309647 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ED09D5F1765C03F00309647 /* InfoPlist.strings */; };
 		6ED09D641765C04000309647 /* TestTDDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED09D631765C04000309647 /* TestTDDTests.m */; };
-		6EFCF8FD17703BE6008DABA3 /* objCal.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFCF8FC17703BE6008DABA3 /* objCal.m */; };
 		6EFCF90017703C5F008DABA3 /* TestTDDTest1806.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFCF8FF17703C5F008DABA3 /* TestTDDTest1806.m */; };
+		6EFCF90317703D82008DABA3 /* Cal1806.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFCF90217703D82008DABA3 /* Cal1806.m */; };
 		BEB0CFF457844AAD9E3360E9 /* libPods-TestTDDTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D148740F6214C7491F890AF /* libPods-TestTDDTests.a */; };
 /* End PBXBuildFile section */
 
@@ -65,9 +65,9 @@
 		6ED09D5E1765C03F00309647 /* TestTDDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestTDDTests-Info.plist"; sourceTree = "<group>"; };
 		6ED09D601765C03F00309647 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6ED09D631765C04000309647 /* TestTDDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTDDTests.m; sourceTree = "<group>"; };
-		6EFCF8FB17703BE6008DABA3 /* objCal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objCal.h; sourceTree = "<group>"; };
-		6EFCF8FC17703BE6008DABA3 /* objCal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = objCal.m; sourceTree = "<group>"; };
 		6EFCF8FF17703C5F008DABA3 /* TestTDDTest1806.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTDDTest1806.m; sourceTree = "<group>"; };
+		6EFCF90117703D82008DABA3 /* Cal1806.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cal1806.h; sourceTree = "<group>"; };
+		6EFCF90217703D82008DABA3 /* Cal1806.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cal1806.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +137,8 @@
 				6ED09D4D1765C03E00309647 /* ViewController.xib */,
 				6EC4796D176EE98800B3BFB9 /* ObjStack.h */,
 				6EC4796E176EE98800B3BFB9 /* ObjStack.m */,
-				6EFCF8FB17703BE6008DABA3 /* objCal.h */,
-				6EFCF8FC17703BE6008DABA3 /* objCal.m */,
+				6EFCF90117703D82008DABA3 /* Cal1806.h */,
+				6EFCF90217703D82008DABA3 /* Cal1806.m */,
 				6ED09D391765C03E00309647 /* Supporting Files */,
 			);
 			path = TestTDD;
@@ -321,7 +321,7 @@
 				6ED09D431765C03E00309647 /* AppDelegate.m in Sources */,
 				6ED09D4C1765C03E00309647 /* ViewController.m in Sources */,
 				6EC4796F176EE98800B3BFB9 /* ObjStack.m in Sources */,
-				6EFCF8FD17703BE6008DABA3 /* objCal.m in Sources */,
+				6EFCF90317703D82008DABA3 /* Cal1806.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
