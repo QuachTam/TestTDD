@@ -13,5 +13,9 @@ SPEC_BEGIN(calculator)
         it(@"input value nil return 0", ^{
             [[theValue([Cal1806 cal:@""]) should] equal:theValue(0)];
         });
+        
+        it(@"input value !nil ", ^{
+            [[theValue([Cal1806 cal:@"1"]) should] equal:theValue(1)];
+        });
     });
 SPEC_END
