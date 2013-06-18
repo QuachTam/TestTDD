@@ -10,6 +10,6 @@
 
 @implementation Cal1806
 +(NSInteger)cal:(NSString*)strValue{
-    return 0;
+    return 1;
 }
 @end
