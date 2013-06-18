@@ -10,6 +10,9 @@
 
 @implementation Cal1806
 +(NSInteger)cal:(NSString*)strValue{
-    return 1;
+    if ([strValue length]==0) {
+        return 0;
+    }
+    return [strValue integerValue];
 }
 @end
