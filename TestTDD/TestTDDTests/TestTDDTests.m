@@ -6,15 +6,19 @@
 //  Copyright (c) 2013 QsoftVietNam. All rights reserved.
 //
 #import "Kiwi.h"
-#import "ObjCal.h"
-
+#import "ObjStack.h"
 SPEC_BEGIN(match)
-    describe(@"Test TDD 13.06", ^{
-        it(@"string content ", ^{
-            [[theValue([ObjCal cal:@""]) should] equal:theValue(0)];
+    describe(@"Test TDD 17.06", ^{
+        it(@"chekc size ", ^{
+            [[theValue([ObjStack countSize]) should] equal:theValue(0)];
         });
-        it(@"string content one number", ^{
-            [[theValue([ObjCal cal:@"1"]) should] equal:theValue(1)];
+        it(@"push value", ^{
+            [[theValue([ObjStack pushValue:@"value 1"]) should] equal:theValue(1)];
+        });
+        
+        it(@"push and count", ^{
+            ObjStack *obj = [[ObjStack alloc] init];
+            
         });
     });
 SPEC_END
