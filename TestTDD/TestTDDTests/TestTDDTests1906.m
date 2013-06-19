@@ -26,5 +26,9 @@ SPEC_BEGIN(Calcul)
         it(@"test numbers input 1,2,3,4 equal 10", ^{
             [[theValue([Obj1906 cal:@"1,2,3,4"]) should] equal:theValue(10)];
         });
+        
+        it(@"test input 1\n2,3 equal 6", ^{
+            [[theValue([Obj1906 cal:@"1\n2,3"]) should] equal:theValue(6)];
+        });
     });
 SPEC_END
