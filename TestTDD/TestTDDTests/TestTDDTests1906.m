@@ -22,5 +22,9 @@ SPEC_BEGIN(Calcul)
         it(@"test input string 1,2", ^{
             [[theValue([Obj1906 cal:@"1,2"]) should] equal:theValue(3)];
         });
+        
+        it(@"test numbers input 1,2,3,4 equal 10", ^{
+            [[theValue([Obj1906 cal:@"1,2,3,4"]) should] equal:theValue(10)];
+        });
     });
 SPEC_END
