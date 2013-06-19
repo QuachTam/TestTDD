@@ -18,5 +18,9 @@ SPEC_BEGIN(Calcul)
         it(@"test input !nil return self", ^{
             [[theValue([Obj1906 cal:@"1"]) should] equal:theValue(1)];
         });
+        
+        it(@"test input string 1,2", ^{
+            [[theValue([Obj1906 cal:@"1,2"]) should] equal:theValue(3)];
+        });
     });
 SPEC_END
