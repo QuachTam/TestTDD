@@ -7,7 +7,7 @@
 //
 
 #import "Kiwi.h"
-
+#import "Obj1906.h"
 
 SPEC_BEGIN(Calcul)
     describe(@"test calculator", ^{

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6E24A97E17718FDE00099019 /* TestTDDTests1906.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E24A97D17718FDE00099019 /* TestTDDTests1906.m */; };
+		6E24A981177190B600099019 /* Obj1906.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E24A980177190B600099019 /* Obj1906.m */; };
 		6EC4796F176EE98800B3BFB9 /* ObjStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC4796E176EE98800B3BFB9 /* ObjStack.m */; };
 		6ED09D331765C03E00309647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D321765C03E00309647 /* UIKit.framework */; };
 		6ED09D351765C03E00309647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D341765C03E00309647 /* Foundation.framework */; };
@@ -44,6 +45,8 @@
 		3D148740F6214C7491F890AF /* libPods-TestTDDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestTDDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A22D8EF72743ABBF989852 /* Pods-TestTDDTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTDDTests.xcconfig"; path = "Pods/Pods-TestTDDTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		6E24A97D17718FDE00099019 /* TestTDDTests1906.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTDDTests1906.m; sourceTree = "<group>"; };
+		6E24A97F177190B600099019 /* Obj1906.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obj1906.h; sourceTree = "<group>"; };
+		6E24A980177190B600099019 /* Obj1906.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Obj1906.m; sourceTree = "<group>"; };
 		6EC4796D176EE98800B3BFB9 /* ObjStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjStack.h; sourceTree = "<group>"; };
 		6EC4796E176EE98800B3BFB9 /* ObjStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjStack.m; sourceTree = "<group>"; };
 		6ED09D2F1765C03E00309647 /* TestTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +144,8 @@
 				6EC4796E176EE98800B3BFB9 /* ObjStack.m */,
 				6EFCF90117703D82008DABA3 /* Cal1806.h */,
 				6EFCF90217703D82008DABA3 /* Cal1806.m */,
+				6E24A97F177190B600099019 /* Obj1906.h */,
+				6E24A980177190B600099019 /* Obj1906.m */,
 				6ED09D391765C03E00309647 /* Supporting Files */,
 			);
 			path = TestTDD;
@@ -325,6 +330,7 @@
 				6ED09D4C1765C03E00309647 /* ViewController.m in Sources */,
 				6EC4796F176EE98800B3BFB9 /* ObjStack.m in Sources */,
 				6EFCF90317703D82008DABA3 /* Cal1806.m in Sources */,
+				6E24A981177190B600099019 /* Obj1906.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
