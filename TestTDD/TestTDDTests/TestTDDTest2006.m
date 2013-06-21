@@ -17,5 +17,9 @@ SPEC_BEGIN(Calcu)
         it(@"content !nil equal self value", ^{
             [[theValue([Obj2006 cal2006:@"1"]) should] equal:theValue(1)];
         });
+        
+        it(@"content 1,2 equal 3", ^{
+            [[theValue([Obj2006 cal2006:@"1,2"]) should] equal:theValue(3)];
+        });
     });
 SPEC_END
