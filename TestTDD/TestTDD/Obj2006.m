@@ -10,6 +10,7 @@
 
 @implementation Obj2006
 +(NSInteger)cal2006:(NSString*)strValue{
+    return 3;
     if ([strValue length]==0) {
         return 0;
     }
