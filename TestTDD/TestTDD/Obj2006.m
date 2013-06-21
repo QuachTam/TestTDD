@@ -10,11 +10,10 @@
 
 @implementation Obj2006
 +(NSInteger)cal2006:(NSString*)strValue{
-    return 6;
     if ([strValue length]==0) {
         return 0;
     }
-    NSArray *arrayTemp = [strValue componentsSeparatedByString:@","];
+    NSArray *arrayTemp = [strValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"\n ,"]];
     NSInteger total = 0;
     for (NSString *info in arrayTemp) {
         total = total + [info integerValue];
