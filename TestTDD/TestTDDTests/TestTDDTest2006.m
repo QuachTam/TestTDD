@@ -15,7 +15,7 @@ SPEC_BEGIN(Calcu)
         });
         
         it(@"content !nil equal self value", ^{
-            [[theBlock([Obj2006 cal2006:@"1"]) should] equal:theValue(1)];
+            [[theValue([Obj2006 cal2006:@"1"]) should] equal:theValue(1)];
         });
     });
 SPEC_END
