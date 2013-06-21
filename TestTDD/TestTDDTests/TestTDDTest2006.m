@@ -21,5 +21,9 @@ SPEC_BEGIN(Calcu)
         it(@"content 1,2 equal 3", ^{
             [[theValue([Obj2006 cal2006:@"1,2"]) should] equal:theValue(3)];
         });
+        
+        it(@"content 1,2,3 equal 6", ^{
+            [[theValue([Obj2006 cal2006:@"1,2,3"]) should] equal:theValue(6)];
+        });
     });
 SPEC_END
