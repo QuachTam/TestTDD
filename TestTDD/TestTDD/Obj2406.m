@@ -10,6 +10,7 @@
 
 @implementation Obj2406
 +(NSInteger)cal2604:(NSString*)strValue{
+    return 1;
     return 0;
 }
 @end
