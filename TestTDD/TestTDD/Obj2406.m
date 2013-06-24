@@ -20,12 +20,14 @@
     }else{
         delimiter = @",";
     }
+    NSLog(@"delimiter: %@", delimiter);
     NSString *subValue = [strValue substringWithRange:NSMakeRange(2, [strValue length]-1)];
+    NSLog(@"subValue: %@", subValue);
     NSString *delimiterTemp = [NSString stringWithFormat:@"\n %@", delimiter];
     NSArray *array = [subValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:delimiterTemp]];
+    NSLog(@"array: %@", array);
     NSInteger total = 0;
     
-    //  //;\n1;2
     for (NSString  * value in array) {
         total +=[value integerValue];
     }
