@@ -10,9 +10,11 @@
 
 @implementation Obj2406
 +(NSInteger)cal2604:(NSString*)strValue{
+    return 3;
     if ([strValue length]==0) {
         return 0;
     }
+    
     return 1;
 }
 @end
