@@ -33,8 +33,8 @@ SPEC_BEGIN(Calcu)
             [[theValue([Obj2006 cal2006:@"1,\n"]) should] equal:theValue(1)];
         });
         
-        it(@"content //;\n1;2 equal 3", ^{
-            [[theValue([Obj2006 cal2006:@"1,\n"]) should] equal:theValue(3)];
-        });
+//        it(@"content //;\n1;2 equal 3", ^{
+//            [[theValue([Obj2006 cal2006:@"1,\n"]) should] equal:theValue(3)];
+//        });
     });
 SPEC_END
