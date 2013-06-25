@@ -10,10 +10,15 @@
 
 @implementation Obj2506
 +(NSInteger)cal2506:(NSString*)strValue{
-    return 3;
+    
     if ([strValue length]==0) {
         return 0;
     }
-    return [strValue integerValue];
+    NSArray *array = [strValue componentsSeparatedByString:@","];
+    NSInteger total = 0;
+    for (NSString *str in array) {
+        total +=[str integerValue];
+    }
+    return total;
 }
 @end
