@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 QsoftVietNam. All rights reserved.
 //
 #import "Kiwi.h"
-
+#import "Obj2506.h"
 SPEC_BEGIN(calcu2506)
     describe(@"calculator string input", ^{
         it(@"string input nil equal 0", ^{

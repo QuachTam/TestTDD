@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 
 #import "ViewController.h"
-#import "Obj2406.m"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -19,7 +18,6 @@
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     
-    [Obj2406 cal2604:@"//;\n1;2"];
     [self.window makeKeyAndVisible];
     return YES;
 }
