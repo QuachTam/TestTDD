@@ -14,7 +14,20 @@
     if ([strValue length]==0) {
         return 0;
     }
-    NSArray *array = [strValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"\n ,"]];
+    
+    //   //;\n1;2
+    
+    NSString *str = [strValue substringWithRange:NSMakeRange(0, 2)];
+    NSString *delimiter;
+    NSString *tempValue;
+    if ([str isEqualToString:@"//"]) {
+        delimiter = [strValue substringWithRange:NSMakeRange(2, 1)];
+        tempValue = [strValue substringWithRange:NSMakeRange(3, [strValue length]-3)];
+    }else{
+        tempValue = strValue;
+        delimiter = @",";
+    }
+    NSArray *array = [tempValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:[NSString stringWithFormat:@"\n %@", delimiter]]];
     NSInteger total = 0;
     for (NSString *str in array) {
         total +=[str integerValue];

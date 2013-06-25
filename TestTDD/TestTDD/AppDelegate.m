@@ -17,7 +17,11 @@
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
+    NSString *aaa = @"//;\n1;2";
+    NSString *str = [aaa substringWithRange:NSMakeRange(0, 2)];
+    NSString *strtemp = [aaa substringWithRange:NSMakeRange(2, 1)];
     
+    NSLog(@"str: %@  === strtemp : %@  -- %@", str, strtemp, [aaa substringWithRange:NSMakeRange(3, [aaa length]-3)]);
     [self.window makeKeyAndVisible];
     return YES;
 }

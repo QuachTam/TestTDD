@@ -7,12 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E24A97E17718FDE00099019 /* TestTDDTests1906.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E24A97D17718FDE00099019 /* TestTDDTests1906.m */; };
-		6E24A981177190B600099019 /* Obj1906.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E24A980177190B600099019 /* Obj1906.m */; };
-		6E342FF1177821E000D5A3C4 /* TestTDDTest2402.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E342FF0177821E000D5A3C4 /* TestTDDTest2402.m */; };
 		6E461DF3177972530054C72C /* TestTDDTest2506.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E461DF2177972530054C72C /* TestTDDTest2506.m */; };
 		6E461DF9177973E50054C72C /* Obj2506.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E461DF8177973E50054C72C /* Obj2506.m */; };
-		6EC4796F176EE98800B3BFB9 /* ObjStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC4796E176EE98800B3BFB9 /* ObjStack.m */; };
 		6ED09D331765C03E00309647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D321765C03E00309647 /* UIKit.framework */; };
 		6ED09D351765C03E00309647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D341765C03E00309647 /* Foundation.framework */; };
 		6ED09D371765C03E00309647 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D361765C03E00309647 /* CoreGraphics.framework */; };
@@ -28,11 +24,6 @@
 		6ED09D581765C03F00309647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D321765C03E00309647 /* UIKit.framework */; };
 		6ED09D591765C03F00309647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D341765C03E00309647 /* Foundation.framework */; };
 		6ED09D611765C03F00309647 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6ED09D5F1765C03F00309647 /* InfoPlist.strings */; };
-		6ED09D641765C04000309647 /* TestTDDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED09D631765C04000309647 /* TestTDDTests.m */; };
-		6EF1A708177431BC00EC496C /* TestTDDTest2006.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF1A707177431BC00EC496C /* TestTDDTest2006.m */; };
-		6EF1A70E1774329800EC496C /* Obj2006.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EF1A70D1774329800EC496C /* Obj2006.m */; };
-		6EFCF90017703C5F008DABA3 /* TestTDDTest1806.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFCF8FF17703C5F008DABA3 /* TestTDDTest1806.m */; };
-		6EFCF90317703D82008DABA3 /* Cal1806.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EFCF90217703D82008DABA3 /* Cal1806.m */; };
 		BEB0CFF457844AAD9E3360E9 /* libPods-TestTDDTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D148740F6214C7491F890AF /* libPods-TestTDDTests.a */; };
 /* End PBXBuildFile section */
 
@@ -49,15 +40,9 @@
 /* Begin PBXFileReference section */
 		3D148740F6214C7491F890AF /* libPods-TestTDDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestTDDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A22D8EF72743ABBF989852 /* Pods-TestTDDTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTDDTests.xcconfig"; path = "Pods/Pods-TestTDDTests.xcconfig"; sourceTree = SOURCE_ROOT; };
-		6E24A97D17718FDE00099019 /* TestTDDTests1906.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTDDTests1906.m; sourceTree = "<group>"; };
-		6E24A97F177190B600099019 /* Obj1906.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obj1906.h; sourceTree = "<group>"; };
-		6E24A980177190B600099019 /* Obj1906.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Obj1906.m; sourceTree = "<group>"; };
-		6E342FF0177821E000D5A3C4 /* TestTDDTest2402.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTDDTest2402.m; sourceTree = "<group>"; };
 		6E461DF2177972530054C72C /* TestTDDTest2506.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTDDTest2506.m; sourceTree = "<group>"; };
 		6E461DF7177973E50054C72C /* Obj2506.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obj2506.h; sourceTree = "<group>"; };
 		6E461DF8177973E50054C72C /* Obj2506.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Obj2506.m; sourceTree = "<group>"; };
-		6EC4796D176EE98800B3BFB9 /* ObjStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjStack.h; sourceTree = "<group>"; };
-		6EC4796E176EE98800B3BFB9 /* ObjStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjStack.m; sourceTree = "<group>"; };
 		6ED09D2F1765C03E00309647 /* TestTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED09D321765C03E00309647 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6ED09D341765C03E00309647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,13 +63,6 @@
 		6ED09D561765C03F00309647 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		6ED09D5E1765C03F00309647 /* TestTDDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestTDDTests-Info.plist"; sourceTree = "<group>"; };
 		6ED09D601765C03F00309647 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6ED09D631765C04000309647 /* TestTDDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTDDTests.m; sourceTree = "<group>"; };
-		6EF1A707177431BC00EC496C /* TestTDDTest2006.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTDDTest2006.m; sourceTree = "<group>"; };
-		6EF1A70C1774329800EC496C /* Obj2006.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obj2006.h; sourceTree = "<group>"; };
-		6EF1A70D1774329800EC496C /* Obj2006.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Obj2006.m; sourceTree = "<group>"; };
-		6EFCF8FF17703C5F008DABA3 /* TestTDDTest1806.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTDDTest1806.m; sourceTree = "<group>"; };
-		6EFCF90117703D82008DABA3 /* Cal1806.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cal1806.h; sourceTree = "<group>"; };
-		6EFCF90217703D82008DABA3 /* Cal1806.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cal1806.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,14 +130,6 @@
 				6ED09D4A1765C03E00309647 /* ViewController.h */,
 				6ED09D4B1765C03E00309647 /* ViewController.m */,
 				6ED09D4D1765C03E00309647 /* ViewController.xib */,
-				6EC4796D176EE98800B3BFB9 /* ObjStack.h */,
-				6EC4796E176EE98800B3BFB9 /* ObjStack.m */,
-				6EFCF90117703D82008DABA3 /* Cal1806.h */,
-				6EFCF90217703D82008DABA3 /* Cal1806.m */,
-				6E24A97F177190B600099019 /* Obj1906.h */,
-				6E24A980177190B600099019 /* Obj1906.m */,
-				6EF1A70C1774329800EC496C /* Obj2006.h */,
-				6EF1A70D1774329800EC496C /* Obj2006.m */,
 				6E461DF7177973E50054C72C /* Obj2506.h */,
 				6E461DF8177973E50054C72C /* Obj2506.m */,
 				6ED09D391765C03E00309647 /* Supporting Files */,
@@ -184,11 +154,6 @@
 		6ED09D5C1765C03F00309647 /* TestTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				6ED09D631765C04000309647 /* TestTDDTests.m */,
-				6EFCF8FF17703C5F008DABA3 /* TestTDDTest1806.m */,
-				6E24A97D17718FDE00099019 /* TestTDDTests1906.m */,
-				6EF1A707177431BC00EC496C /* TestTDDTest2006.m */,
-				6E342FF0177821E000D5A3C4 /* TestTDDTest2402.m */,
 				6E461DF2177972530054C72C /* TestTDDTest2506.m */,
 				6ED09D5D1765C03F00309647 /* Supporting Files */,
 			);
@@ -347,10 +312,6 @@
 				6ED09D3F1765C03E00309647 /* main.m in Sources */,
 				6ED09D431765C03E00309647 /* AppDelegate.m in Sources */,
 				6ED09D4C1765C03E00309647 /* ViewController.m in Sources */,
-				6EC4796F176EE98800B3BFB9 /* ObjStack.m in Sources */,
-				6EFCF90317703D82008DABA3 /* Cal1806.m in Sources */,
-				6E24A981177190B600099019 /* Obj1906.m in Sources */,
-				6EF1A70E1774329800EC496C /* Obj2006.m in Sources */,
 				6E461DF9177973E50054C72C /* Obj2506.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,11 +320,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ED09D641765C04000309647 /* TestTDDTests.m in Sources */,
-				6EFCF90017703C5F008DABA3 /* TestTDDTest1806.m in Sources */,
-				6E24A97E17718FDE00099019 /* TestTDDTests1906.m in Sources */,
-				6EF1A708177431BC00EC496C /* TestTDDTest2006.m in Sources */,
-				6E342FF1177821E000D5A3C4 /* TestTDDTest2402.m in Sources */,
 				6E461DF3177972530054C72C /* TestTDDTest2506.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

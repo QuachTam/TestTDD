@@ -33,5 +33,6 @@ SPEC_BEGIN(calcu2506)
             [[theValue([Obj2506 cal2506:@"//;\n1;2"]) should] equal:theValue(3)];
         });
         
+        
     });
 SPEC_END
