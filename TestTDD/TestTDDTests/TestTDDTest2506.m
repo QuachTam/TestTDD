@@ -25,8 +25,13 @@ SPEC_BEGIN(calcu2506)
             [[theValue([Obj2506 cal2506:@"1,2,3"]) should] equal:theValue(6)];
         });
         
-        it(@"string input 1,2,3 equal 6", ^{
+        it(@"string input 1\n2,3 equal 6", ^{
             [[theValue([Obj2506 cal2506:@"1\n2,3"]) should] equal:theValue(6)];
         });
+        
+        it(@"string input //;\n1,2", ^{
+            [[theValue([Obj2506 cal2506:@"//;\n1;2"]) should] equal:theValue(3)];
+        });
+        
     });
 SPEC_END
