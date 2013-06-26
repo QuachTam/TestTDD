@@ -13,5 +13,9 @@ SPEC_BEGIN(calcultor2605)
         it(@"string input nil equal 0", ^{
             [[theValue([Obj2605 cal2605:@""]) should] equal:theValue(0)];
         });
+        
+        it(@"string input 1 equal 1", ^{
+            [[theValue([Obj2605 cal2605:@"1"]) should] equal:theValue(1)];
+        });
     });
 SPEC_END
