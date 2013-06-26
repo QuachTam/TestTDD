@@ -10,6 +10,7 @@
 		6E461DF3177972530054C72C /* TestTDDTest2506.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E461DF2177972530054C72C /* TestTDDTest2506.m */; };
 		6E461DF9177973E50054C72C /* Obj2506.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E461DF8177973E50054C72C /* Obj2506.m */; };
 		6E9980F9177AC5040028A1F7 /* TestTDDTest2606.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9980F8177AC5040028A1F7 /* TestTDDTest2606.m */; };
+		6E9980FC177AC5A50028A1F7 /* Obj2605.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9980FB177AC5A50028A1F7 /* Obj2605.m */; };
 		6ED09D331765C03E00309647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D321765C03E00309647 /* UIKit.framework */; };
 		6ED09D351765C03E00309647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D341765C03E00309647 /* Foundation.framework */; };
 		6ED09D371765C03E00309647 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D361765C03E00309647 /* CoreGraphics.framework */; };
@@ -45,6 +46,8 @@
 		6E461DF7177973E50054C72C /* Obj2506.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obj2506.h; sourceTree = "<group>"; };
 		6E461DF8177973E50054C72C /* Obj2506.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Obj2506.m; sourceTree = "<group>"; };
 		6E9980F8177AC5040028A1F7 /* TestTDDTest2606.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTDDTest2606.m; sourceTree = "<group>"; };
+		6E9980FA177AC5A50028A1F7 /* Obj2605.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obj2605.h; sourceTree = "<group>"; };
+		6E9980FB177AC5A50028A1F7 /* Obj2605.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Obj2605.m; sourceTree = "<group>"; };
 		6ED09D2F1765C03E00309647 /* TestTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED09D321765C03E00309647 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6ED09D341765C03E00309647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -134,6 +137,8 @@
 				6ED09D4D1765C03E00309647 /* ViewController.xib */,
 				6E461DF7177973E50054C72C /* Obj2506.h */,
 				6E461DF8177973E50054C72C /* Obj2506.m */,
+				6E9980FA177AC5A50028A1F7 /* Obj2605.h */,
+				6E9980FB177AC5A50028A1F7 /* Obj2605.m */,
 				6ED09D391765C03E00309647 /* Supporting Files */,
 			);
 			path = TestTDD;
@@ -316,6 +321,7 @@
 				6ED09D431765C03E00309647 /* AppDelegate.m in Sources */,
 				6ED09D4C1765C03E00309647 /* ViewController.m in Sources */,
 				6E461DF9177973E50054C72C /* Obj2506.m in Sources */,
+				6E9980FC177AC5A50028A1F7 /* Obj2605.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
