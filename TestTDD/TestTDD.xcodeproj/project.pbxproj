@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E461DF3177972530054C72C /* TestTDDTest2506.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E461DF2177972530054C72C /* TestTDDTest2506.m */; };
-		6E461DF9177973E50054C72C /* Obj2506.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E461DF8177973E50054C72C /* Obj2506.m */; };
 		6E9980F9177AC5040028A1F7 /* TestTDDTest2606.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9980F8177AC5040028A1F7 /* TestTDDTest2606.m */; };
 		6E9980FC177AC5A50028A1F7 /* Obj2605.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9980FB177AC5A50028A1F7 /* Obj2605.m */; };
 		6ED09D331765C03E00309647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D321765C03E00309647 /* UIKit.framework */; };
@@ -42,9 +40,6 @@
 /* Begin PBXFileReference section */
 		3D148740F6214C7491F890AF /* libPods-TestTDDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestTDDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A22D8EF72743ABBF989852 /* Pods-TestTDDTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTDDTests.xcconfig"; path = "Pods/Pods-TestTDDTests.xcconfig"; sourceTree = SOURCE_ROOT; };
-		6E461DF2177972530054C72C /* TestTDDTest2506.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTDDTest2506.m; sourceTree = "<group>"; };
-		6E461DF7177973E50054C72C /* Obj2506.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obj2506.h; sourceTree = "<group>"; };
-		6E461DF8177973E50054C72C /* Obj2506.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Obj2506.m; sourceTree = "<group>"; };
 		6E9980F8177AC5040028A1F7 /* TestTDDTest2606.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTDDTest2606.m; sourceTree = "<group>"; };
 		6E9980FA177AC5A50028A1F7 /* Obj2605.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Obj2605.h; sourceTree = "<group>"; };
 		6E9980FB177AC5A50028A1F7 /* Obj2605.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Obj2605.m; sourceTree = "<group>"; };
@@ -135,8 +130,6 @@
 				6ED09D4A1765C03E00309647 /* ViewController.h */,
 				6ED09D4B1765C03E00309647 /* ViewController.m */,
 				6ED09D4D1765C03E00309647 /* ViewController.xib */,
-				6E461DF7177973E50054C72C /* Obj2506.h */,
-				6E461DF8177973E50054C72C /* Obj2506.m */,
 				6E9980FA177AC5A50028A1F7 /* Obj2605.h */,
 				6E9980FB177AC5A50028A1F7 /* Obj2605.m */,
 				6ED09D391765C03E00309647 /* Supporting Files */,
@@ -161,7 +154,6 @@
 		6ED09D5C1765C03F00309647 /* TestTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				6E461DF2177972530054C72C /* TestTDDTest2506.m */,
 				6E9980F8177AC5040028A1F7 /* TestTDDTest2606.m */,
 				6ED09D5D1765C03F00309647 /* Supporting Files */,
 			);
@@ -320,7 +312,6 @@
 				6ED09D3F1765C03E00309647 /* main.m in Sources */,
 				6ED09D431765C03E00309647 /* AppDelegate.m in Sources */,
 				6ED09D4C1765C03E00309647 /* ViewController.m in Sources */,
-				6E461DF9177973E50054C72C /* Obj2506.m in Sources */,
 				6E9980FC177AC5A50028A1F7 /* Obj2605.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,7 +320,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E461DF3177972530054C72C /* TestTDDTest2506.m in Sources */,
 				6E9980F9177AC5040028A1F7 /* TestTDDTest2606.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
