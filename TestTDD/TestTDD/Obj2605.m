@@ -10,11 +10,18 @@
 
 @implementation Obj2605
 +(NSInteger)cal2605:(NSString*)strValue{
-    return 3;
     if ([strValue length]==0) {
         return 0;
     }
-    NSArray *arrayString = [strValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"\n ,"]];
+    
+   NSRange range1 = [strValue rangeOfString:@"//"];
+    NSLog(@"spaceIndex: %d", range1.length);
+    NSString *delimiter=@",";
+    if (range1.length>0) {
+        delimiter = @";";
+    }
+    
+    NSArray *arrayString = [strValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:[NSString stringWithFormat:@"\n %@", delimiter]]];
     
     NSInteger total = 0;
     

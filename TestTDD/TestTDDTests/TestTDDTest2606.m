@@ -8,7 +8,7 @@
 
 #import "Kiwi.h"
 #import "Obj2605.h"
-SPEC_BEGIN(calcultor2605)
+SPEC_BEGIN(cal2605)
     describe(@"calculator string input", ^{
         it(@"string input nil equal 0", ^{
             [[theValue([Obj2605 cal2605:@""]) should] equal:theValue(0)];
