@@ -37,5 +37,9 @@ SPEC_BEGIN(calcultor2605)
         it(@"string input 1\n2,3,4 equal 10", ^{
             [[theValue([Obj2605 cal2605:@"1\n2,3,4"]) should] equal:theValue(10)];
         });
+        
+        it(@"string input //;\n1;2 equal 3", ^{
+            [[theValue([Obj2605 cal2605:@"//;\n1;2"]) should] equal:theValue(3)];
+        });
     });
 SPEC_END
