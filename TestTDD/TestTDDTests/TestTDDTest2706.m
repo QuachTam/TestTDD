@@ -30,6 +30,12 @@ describe(@"calculator string input ", ^{
         [[theValue([OBJ2706 Cal:@"//;\n2;3"]) should] equal: theValue(5)];
     });
     
+    it(@"input string //x\n2x3 equal 5", ^{
+        [[theValue([OBJ2706 Cal:@"//x\n2x3"]) should] equal: theValue(5)];
+    });
     
+    it(@"input string //x\n2x3000 equal 2", ^{
+        [[theValue([OBJ2706 Cal:@"//x\n2x3000"]) should] equal: theValue(2)];
+    });
 });
 SPEC_END
