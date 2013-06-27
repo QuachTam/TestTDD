@@ -13,5 +13,9 @@ describe(@"calculator string input ", ^{
     it(@"input string nil equal 0", ^{
         [[theValue([OBJ2706 Cal:@""]) should] equal: theValue(0)];
     });
+    
+    it(@"input string 1 equal 1", ^{
+        [[theValue([OBJ2706 Cal:@"1"]) should] equal: theValue(1)];
+    });
 });
 SPEC_END
