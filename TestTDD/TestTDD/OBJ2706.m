@@ -10,11 +10,18 @@
 
 @implementation OBJ2706
 +(NSInteger)Cal:(NSString*)strValue{
-    return 5;
     if ([strValue length]==0) {
         return 0;
     }
-    NSArray *arraySubString = [strValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"\n ,"]];
+    
+    NSRange rangeSearch = [strValue rangeOfString:@"//"];
+    NSString *delimiter = @",";
+    if (rangeSearch.length>0) {
+        delimiter = [strValue substringWithRange:NSMakeRange(2, 1)];
+        NSLog(@"xxx: %@", delimiter);
+    }
+    NSString *strDelimiter = [NSString stringWithFormat:@"\n %@", delimiter];
+    NSArray *arraySubString = [strValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:strDelimiter]];
     NSInteger total = 0;
     for (NSString *str in arraySubString) {
         total += [str integerValue];
