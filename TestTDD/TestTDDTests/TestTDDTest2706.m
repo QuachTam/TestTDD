@@ -25,5 +25,9 @@ describe(@"calculator string input ", ^{
     it(@"input string 1\n2c3 equal 6", ^{
         [[theValue([OBJ2706 Cal:@"1\n2,3"]) should] equal: theValue(6)];
     });
+    
+    it(@"input string //;\n2;3 equal 5", ^{
+        [[theValue([OBJ2706 Cal:@"//;\n2;3"]) should] equal: theValue(5)];
+    });
 });
 SPEC_END
