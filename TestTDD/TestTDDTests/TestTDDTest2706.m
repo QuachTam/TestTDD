@@ -7,7 +7,7 @@
 //
 
 #import "Kiwi.h"
-
+#import "OBJ2706.h"
 SPEC_BEGIN(Cal2706)
 describe(@"calculator string input ", ^{
     it(@"input string nil equal 0", ^{
