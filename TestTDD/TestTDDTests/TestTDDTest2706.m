@@ -37,5 +37,17 @@ describe(@"calculator string input ", ^{
     it(@"input string //x\n2x3000 equal 2", ^{
         [[theValue([OBJ2706 Cal:@"//x\n2x3000"]) should] equal: theValue(2)];
     });
+    
+    it(@"input string //***\n1***2***3 equal 6", ^{
+        [[theValue([OBJ2706 Cal:@"//***\n1***2***3"]) should] equal: theValue(6)];
+    });
+    it(@"input string //***\n7***8***9 equal 24", ^{
+        [[theValue([OBJ2706 Cal:@"//***\n7***8***9"]) should] equal: theValue(24)];
+    });
+    
+    
+    it(@"input string //*%\n1*2%3 equal 6", ^{
+        [[theValue([OBJ2706 Cal:@"//*%\n1*2%3"]) should] equal: theValue(6)];
+    });
 });
 SPEC_END

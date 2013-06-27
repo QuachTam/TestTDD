@@ -22,11 +22,13 @@
     }
     NSString *strDelimiter = [NSString stringWithFormat:@"\n %@", delimiter];
     NSArray *arraySubString = [strValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:strDelimiter]];
+    NSLog(@"arraySubString: %@", arraySubString);
     NSInteger total = 0;
     for (NSString *str in arraySubString) {
         if ([str integerValue]>=1000) {
             continue;
         }
+        NSLog(@"[str integerValue]: %d", [str integerValue]);
         total += [str integerValue];
     }
     return total;
