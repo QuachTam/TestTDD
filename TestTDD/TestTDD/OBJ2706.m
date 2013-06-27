@@ -10,7 +10,6 @@
 
 @implementation OBJ2706
 +(NSInteger)Cal:(NSString*)strValue{
-    return 2;
     if ([strValue length]==0) {
         return 0;
     }
@@ -25,6 +24,9 @@
     NSArray *arraySubString = [strValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:strDelimiter]];
     NSInteger total = 0;
     for (NSString *str in arraySubString) {
+        if ([str integerValue]>=1000) {
+            continue;
+        }
         total += [str integerValue];
     }
     return total;
