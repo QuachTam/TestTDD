@@ -10,26 +10,24 @@
 
 @implementation OBJ2706
 +(NSInteger)Cal:(NSString*)strValue{
-    return 6;
     if ([strValue length]==0) {
         return 0;
     }
-    
-    NSRange rangeSearch = [strValue rangeOfString:@"//"];
+    NSRange rangeFrom = [strValue rangeOfString:@"//"];
     NSString *delimiter = @",";
-    if (rangeSearch.length>0) {
-        delimiter = [strValue substringWithRange:NSMakeRange(2, 1)];
-        NSLog(@"xxx: %@", delimiter);
+    if (rangeFrom.length>0) {
+        
+        NSRange rangeTo = [strValue rangeOfString:@"\n"];
+        NSString *allDelimiter = [strValue substringWithRange:NSMakeRange(rangeFrom.length, rangeTo.location - rangeFrom.location-1)];
+        delimiter = allDelimiter;
     }
     NSString *strDelimiter = [NSString stringWithFormat:@"\n %@", delimiter];
     NSArray *arraySubString = [strValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:strDelimiter]];
-    NSLog(@"arraySubString: %@", arraySubString);
     NSInteger total = 0;
     for (NSString *str in arraySubString) {
         if ([str integerValue]>=1000) {
             continue;
         }
-        NSLog(@"[str integerValue]: %d", [str integerValue]);
         total += [str integerValue];
     }
     return total;
