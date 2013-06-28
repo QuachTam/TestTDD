@@ -13,5 +13,9 @@ SPEC_BEGIN(OBJ2806_Class)
         it(@"string input nil equal 0", ^{
             [[theValue([OBJ2806 cal:@""]) should] equal: theValue(0)];
         });
+        
+        it(@"string input 1 equal 1", ^{
+            [[theValue([OBJ2806 cal:@"1"]) should] equal: theValue(1)];
+        });
     });
 SPEC_END
