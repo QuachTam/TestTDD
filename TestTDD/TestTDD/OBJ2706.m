@@ -14,9 +14,10 @@
         return 0;
     }
     NSRange rangeFrom = [strValue rangeOfString:@"//"];
+    
     NSString *delimiter = @",";
     if (rangeFrom.length>0) {
-        
+        NSLog(@"rangeFrom: %d", rangeFrom.location);
         NSRange rangeTo = [strValue rangeOfString:@"\n"];
         NSString *allDelimiter = [strValue substringWithRange:NSMakeRange(rangeFrom.length, rangeTo.location - rangeFrom.location-1)];
         delimiter = allDelimiter;
