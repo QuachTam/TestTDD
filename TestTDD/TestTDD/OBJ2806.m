@@ -23,8 +23,14 @@
     NSString *deletimer = [NSString stringWithFormat:@"\n %@", subDeletimer];
     NSArray *arraysubstring = [strValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:deletimer]];
     NSInteger total =0;
+    NSLog(@"arraysubstring: %@", arraysubstring);
     for (NSString *sub in arraysubstring) {
-        total +=[sub integerValue];
+        if ([sub integerValue]<0) {
+            NSException *exception = [NSException exceptionWithName:@"negatives not allowed" reason:@"negatives not allowed" userInfo:nil];
+            [exception raise];
+        }else{
+            total +=[sub integerValue];
+        }
     }
     return total;
 }

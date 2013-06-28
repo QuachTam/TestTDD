@@ -52,6 +52,14 @@ SPEC_BEGIN(OBJ2806_Class)
         
         it(@"string input //:\n1:2:-3 equal alert", ^{
             [[theValue([OBJ2806 cal:@"//:\n1:2:-3"]) should] equal: theValue(-1)];
+            theBlock(^{
+                NSException *ex = [NSException exceptionWithName:@"negatives not allowed" reason:@"negatives not allowed" userInfo:nil];
+                [ex raise];
+            });
+        });
+        
+        it(@"string input //:\n1:2:3000 equal 3", ^{
+            [[theValue([OBJ2806 cal:@"//:\n1:2:3000"]) should] equal: theValue(3)];
         });
         
     });
