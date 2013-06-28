@@ -33,5 +33,10 @@ SPEC_BEGIN(OBJ2806_Class)
         it(@"string input 1\n2,3 equal 6", ^{
             [[theValue([OBJ2806 cal:@"1\n2,3"]) should] equal: theValue(6)];
         });
+        
+        it(@"string input //;\n1;2 equal 3", ^{
+            [[theValue([OBJ2806 cal:@"//;\n1;2"]) should] equal: theValue(3)];
+        });//;\n1;2
+
     });
 SPEC_END
