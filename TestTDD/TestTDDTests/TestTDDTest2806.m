@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 QsoftVietNam. All rights reserved.
 //
 #import "Kiwi.h"
+#import "OBJ2806.h"
 
 SPEC_BEGIN(OBJ2806_Class)
     describe(@"calculator string input", ^{
