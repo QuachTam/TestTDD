@@ -29,6 +29,9 @@
             NSException *exception = [NSException exceptionWithName:@"negatives not allowed" reason:@"negatives not allowed" userInfo:nil];
             [exception raise];
         }else{
+            if ([sub integerValue]>=1000) {
+                continue;
+            }
             total +=[sub integerValue];
         }
     }
