@@ -41,6 +41,18 @@ SPEC_BEGIN(OBJ2806_Class)
         it(@"string input //;\n1;2;3 equal 6", ^{
             [[theValue([OBJ2806 cal:@"//;\n1;2;3"]) should] equal: theValue(6)];
         });
-
+        
+        it(@"string input //;\n1;2;3 equal 6", ^{
+            [[theValue([OBJ2806 cal:@"//;\n1;2;3"]) should] equal: theValue(6)];
+        });
+        
+        it(@"string input //:\n1:2:3 equal 6", ^{
+            [[theValue([OBJ2806 cal:@"//:\n1:2:3"]) should] equal: theValue(6)];
+        });
+        
+        it(@"string input //:\n1:2:-3 equal alert", ^{
+            [[theValue([OBJ2806 cal:@"//:\n1:2:-3"]) should] equal: theValue(-1)];
+        });
+        
     });
 SPEC_END
