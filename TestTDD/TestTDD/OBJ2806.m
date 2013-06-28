@@ -10,10 +10,14 @@
 
 @implementation OBJ2806
 +(NSInteger)cal:(NSString*)strValue{
-    return 3;
     if ([strValue length]==0) {
        return 0;
     }
-    return [strValue integerValue];
+    NSArray *arraysubstring = [strValue componentsSeparatedByString:@","];
+    NSInteger total =0;
+    for (NSString *sub in arraysubstring) {
+        total +=[sub integerValue];
+    }
+    return total;
 }
 @end
