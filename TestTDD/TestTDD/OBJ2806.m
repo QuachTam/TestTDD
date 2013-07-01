@@ -16,14 +16,11 @@
     NSRange subFrom = [strValue rangeOfString:@"//"];
     NSString *subDeletimer = @",";
     if (subFrom.length>0) {
-        NSLog(@"subFrommxxX: %d", subFrom.location);
         subDeletimer = [strValue substringWithRange:NSMakeRange(subFrom.length, 1)];
-        NSLog(@"subDeletimer: %@", subDeletimer);
     }
     NSString *deletimer = [NSString stringWithFormat:@"\n %@", subDeletimer];
     NSArray *arraysubstring = [strValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:deletimer]];
     NSInteger total =0;
-    NSLog(@"arraysubstring: %@", arraysubstring);
     for (NSString *sub in arraysubstring) {
         if ([sub integerValue]<0) {
             NSException *exception = [NSException exceptionWithName:@"negatives not allowed" reason:@"negatives not allowed" userInfo:nil];
