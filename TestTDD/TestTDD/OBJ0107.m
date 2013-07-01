@@ -10,7 +10,6 @@
 
 @implementation OBJ0107
 +(NSInteger)cal:(NSString*)strValue{
-    return 3;
     if ([strValue length]==0) {
         return 0;
     }
@@ -18,7 +17,12 @@
     NSArray *arraySub = [strValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"\n ,"]];
     NSInteger total = 0;
     for (NSString *sub in arraySub) {
-        total +=[sub integerValue];
+        if ([sub integerValue]<0) {
+            NSException *ecx = [NSException exceptionWithName:@"negatives not allowed" reason:@"negatives not allowed" userInfo:nil];
+            [ecx raise];
+        }else{
+            total +=[sub integerValue];
+        }
     }
     return total;
 }

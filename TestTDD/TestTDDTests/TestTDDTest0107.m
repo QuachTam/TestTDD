@@ -36,6 +36,10 @@ SPEC_BEGIN(OBJ0107_class)
         
         it(@"string input 1,2,-3 equal 3", ^{
             [[theValue([OBJ0107 cal:@"1,2,-3"]) should] equal: theValue(3)];
+            theBlock(^{
+                NSException *exception = [NSException exceptionWithName:@"negatives not allowed" reason:@"negatives not allowed" userInfo:nil];
+                [exception raise];
+            });
         });
     });
 SPEC_END
