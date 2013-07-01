@@ -49,5 +49,7 @@ SPEC_BEGIN(OBJ0107_class)
             [[theValue([OBJ0107 cal:@"2,5,1002,3000"]) should] equal: theValue(7)];
         });
         
+        
+        
     });
 SPEC_END
