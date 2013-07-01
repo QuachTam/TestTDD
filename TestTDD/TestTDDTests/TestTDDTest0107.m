@@ -49,7 +49,9 @@ SPEC_BEGIN(OBJ0107_class)
             [[theValue([OBJ0107 cal:@"2,5,1002,3000"]) should] equal: theValue(7)];
         });
         
-        
+        it(@"string input //[***]\n1***2***3 equal 6", ^{
+            [[theValue([OBJ0107 cal:@"//[***]\n1***2***3"]) should] equal: theValue(6)];
+        });
         
     });
 SPEC_END
