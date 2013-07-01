@@ -55,5 +55,9 @@ SPEC_BEGIN(OBJ0107_class)
         it(@"string input //[*][%]\n1*2%3 equal 6", ^{
             [[theValue([OBJ0107 cal:@"//*%\n1*2%3"]) should] equal: theValue(6)];
         });
+        
+        it(@"string input //*%*$#\n1*2%3*3$4#2 equal 6", ^{
+            [[theValue([OBJ0107 cal:@"//*%*$#\n1*2%3*3$4#2"]) should] equal: theValue(15)];
+        });
     });
 SPEC_END
