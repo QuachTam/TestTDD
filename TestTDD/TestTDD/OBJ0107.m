@@ -10,17 +10,15 @@
 
 @implementation OBJ0107
 +(NSInteger)cal:(NSString*)strValue{
-    return 6;
     if ([strValue length]==0) {
         return 0;
     }
     
     NSRange from = [strValue rangeOfString:@"//"];
     NSString *subDeletimer = @"";
-    NSLog(@"from: %d", from.length);
     if (from.length>=2) {
-        subDeletimer = [strValue substringWithRange:NSMakeRange(2, 1)];
-        NSLog(@"subDeletimer: %@", subDeletimer);
+        NSRange to = [strValue rangeOfString:@"\n"];
+        subDeletimer = [strValue substringWithRange:NSMakeRange(from.length, to.location-from.length)];
     }else{
         subDeletimer = @",";
     }
