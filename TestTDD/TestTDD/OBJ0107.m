@@ -10,7 +10,6 @@
 
 @implementation OBJ0107
 +(NSInteger)cal:(NSString*)strValue{
-    return 7;
     if ([strValue length]==0) {
         return 0;
     }
@@ -32,6 +31,9 @@
             NSException *ecx = [NSException exceptionWithName:@"negatives not allowed" reason:@"negatives not allowed" userInfo:nil];
             [ecx raise];
         }else{
+            if ([sub integerValue]>1000) {
+                continue;
+            }
             total +=[sub integerValue];
         }
     }
