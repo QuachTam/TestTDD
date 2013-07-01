@@ -34,6 +34,10 @@ SPEC_BEGIN(OBJ0107_class)
             [[theValue([OBJ0107 cal:@"1\n2,3"]) should] equal: theValue(6)];
         });
         
+        it(@"string input //;\n2;3 equal 5", ^{
+            [[theValue([OBJ0107 cal:@"//;\n2;3"]) should] equal: theValue(5)];
+        });
+        
         it(@"string input 1,2,-3 equal 3", ^{
             [[theValue([OBJ0107 cal:@"1,2,-3"]) should] equal: theValue(3)];
             theBlock(^{
