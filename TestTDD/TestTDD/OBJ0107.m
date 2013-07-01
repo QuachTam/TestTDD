@@ -10,12 +10,11 @@
 
 @implementation OBJ0107
 +(NSInteger)cal:(NSString*)strValue{
-    return 6;
     if ([strValue length]==0) {
         return 0;
     }
     
-    NSArray *arraySub = [strValue componentsSeparatedByString:@","];
+    NSArray *arraySub = [strValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"\n ,"]];
     NSInteger total = 0;
     for (NSString *sub in arraySub) {
         total +=[sub integerValue];
