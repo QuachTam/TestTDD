@@ -10,12 +10,21 @@
 
 @implementation OBJ0107
 +(NSInteger)cal:(NSString*)strValue{
-    return 5;
     if ([strValue length]==0) {
         return 0;
     }
     
-    NSArray *arraySub = [strValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"\n ,"]];
+    NSRange from = [strValue rangeOfString:@"//"];
+    NSString *subDeletimer = @"";
+    NSLog(@"from: %d", from.length);
+    if (from.length>=2) {
+        subDeletimer = [strValue substringWithRange:NSMakeRange(2, 1)];
+        NSLog(@"subDeletimer: %@", subDeletimer);
+    }else{
+        subDeletimer = @",";
+    }
+    
+    NSArray *arraySub = [strValue componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:[NSString stringWithFormat:@"\n %@", subDeletimer]]];
     NSInteger total = 0;
     for (NSString *sub in arraySub) {
         if ([sub integerValue]<0) {
