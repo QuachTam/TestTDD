@@ -7,7 +7,7 @@
 //
 
 #import "Kiwi.h"
-
+#import "OBJ0107.h"
 SPEC_BEGIN(OBJ0107_class)
     describe(@"calculator string input ", ^{
         it(@"string input nil equal 0", ^{

@@ -9,4 +9,7 @@
 #import "OBJ0107.h"
 
 @implementation OBJ0107
++(NSInteger)cal:(NSString*)strValue{
+    return 0;
+}
 @end

@@ -9,4 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface OBJ0107 : NSObject
+
++(NSInteger)cal:(NSString*)strValue;
 @end
