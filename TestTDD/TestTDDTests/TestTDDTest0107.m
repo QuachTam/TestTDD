@@ -25,5 +25,9 @@ SPEC_BEGIN(OBJ0107_class)
         it(@"string input 1,2 equal 3", ^{
             [[theValue([OBJ0107 cal:@"1,2"]) should] equal: theValue(3)];
         });
+        
+        it(@"string input 1,2,3 equal 6", ^{
+            [[theValue([OBJ0107 cal:@"1,2,3"]) should] equal: theValue(6)];
+        });
     });
 SPEC_END
