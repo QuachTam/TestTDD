@@ -10,6 +10,8 @@
 
 @interface BankAccount : NSObject{
     NSString *accountNumber;
+    double balance;
 }
 @property (strong, nonatomic) NSString *accountNumber;
+@property (nonatomic, readwrite) double balance;
 @end

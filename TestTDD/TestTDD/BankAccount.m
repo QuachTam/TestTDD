@@ -10,11 +10,12 @@
 
 @implementation BankAccount
 @synthesize accountNumber;
-
+@synthesize balance;
 -(id)init{
     self = [super init];
     if (self) {
         accountNumber = [[NSString alloc] init];
+        balance = 0.0;
     }
     return self;
 }

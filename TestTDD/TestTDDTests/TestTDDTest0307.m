@@ -11,9 +11,14 @@
 
 SPEC_BEGIN(class_0307)
     describe(@"Test TDD 2", ^{
-        it(@"open new account", ^{
+        it(@"open new account, accountNumber !nil", ^{
             BankAccount *_bankAcount = [[BankAccount alloc] init];
             [_bankAcount.accountNumber shouldNotBeNil];
+        });
+        
+        it(@"open new account, balance = 0", ^{
+            BankAccount *_bankAccount = [[BankAccount alloc] init];
+            [[theValue(_bankAccount.balance) should] equal:theValue(0)];
         });
     });
 SPEC_END
