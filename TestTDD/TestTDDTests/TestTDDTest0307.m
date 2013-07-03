@@ -20,5 +20,10 @@ SPEC_BEGIN(class_0307)
             BankAccount *_bankAccount = [[BankAccount alloc] init];
             [[theValue(_bankAccount.balance) should] equal:theValue(0)];
         });
+        
+        it(@"open new account, openTimestamp", ^{
+            BankAccount *_bankAccount = [[BankAccount alloc] init];
+            [_bankAccount.openTimestamp shouldNotBeNil];
+        });
     });
 SPEC_END
