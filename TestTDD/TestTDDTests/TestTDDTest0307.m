@@ -9,8 +9,8 @@
 #import "Kiwi.h"
 #import "BankAccount.h"
 
-SPEC_BEGIN(class_0307)
-    describe(@"Test TDD 2", ^{
+SPEC_BEGIN(class_BankAccount)
+    describe(@"Open new BankAccount", ^{
         it(@"open new account, accountNumber !nil", ^{
             BankAccount *_bankAcount = [[BankAccount alloc] init];
             [_bankAcount.accountNumber shouldNotBeNil];
@@ -21,7 +21,7 @@ SPEC_BEGIN(class_0307)
             [[theValue(_bankAccount.balance) should] equal:theValue(0)];
         });
         
-        it(@"open new account, openTimestamp", ^{
+        it(@"open new account, openTimestamp !nil", ^{
             BankAccount *_bankAccount = [[BankAccount alloc] init];
             [_bankAccount.openTimestamp shouldNotBeNil];
         });
