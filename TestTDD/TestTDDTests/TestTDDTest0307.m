@@ -7,6 +7,7 @@
 //
 
 #import "Kiwi.h"
+#import "BankAccount.h"
 
 SPEC_BEGIN(class_0307)
     describe(@"Test TDD 2", ^{
