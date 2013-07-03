@@ -9,9 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface BankAccount : NSObject{
+    NSDate *openTimestamp;
     NSString *accountNumber;
     double balance;
 }
 @property (strong, nonatomic) NSString *accountNumber;
 @property (nonatomic, readwrite) double balance;
+@property (nonatomic, readwrite) NSDate *openTimestamp;
 @end
