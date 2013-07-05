@@ -38,7 +38,8 @@ SPEC_BEGIN(class_BankAccount)
             BankAccountDao *accDao = [BankAccountDao nullMock];
             [bankAccount stub:@selector(accountNumber) andReturn:accountNumber];
             
-            [[[accDao getAccount:accountNumber] should] equal:accountNumber];
+            BankAccount *bankAccountDao = [accDao getAccount:accountNumber];
+            
         });
     });
 SPEC_END
