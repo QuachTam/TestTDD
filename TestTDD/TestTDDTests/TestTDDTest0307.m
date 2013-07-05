@@ -25,5 +25,9 @@ SPEC_BEGIN(class_BankAccount)
             BankAccount *_bankAccount = [[BankAccount alloc] init];
             [_bankAccount.openTimestamp shouldNotBeNil];
         });
+        
+        it(@"getAccount", ^{
+            BankAccountDao *_accDao = [BankAccountDao mock];
+        });
     });
 SPEC_END
