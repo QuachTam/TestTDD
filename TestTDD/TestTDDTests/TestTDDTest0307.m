@@ -8,9 +8,16 @@
 
 #import "Kiwi.h"
 #import "BankAccount.h"
+#import "BankAccountDao.h"
 
 SPEC_BEGIN(class_BankAccount)
     describe(@"Open new BankAccount", ^{
+        __block NSString *accountNumber;
+        
+        beforeEach(^{
+            accountNumber = [NSString nullMock];
+        });
+        
         it(@"open new account, accountNumber !nil", ^{
             BankAccount *_bankAcount = [[BankAccount alloc] init];
             [_bankAcount.accountNumber shouldNotBeNil];
@@ -27,7 +34,11 @@ SPEC_BEGIN(class_BankAccount)
         });
         
         it(@"getAccount", ^{
-            BankAccountDao *_accDao = [BankAccountDao mock];
+            BankAccount *bankAccount = [BankAccount nullMock];
+            BankAccountDao *accDao = [BankAccountDao nullMock];
+            [bankAccount stub:@selector(accountNumber) andReturn:accountNumber];
+            
+            [[[accDao getAccount:accountNumber] should] equal:accountNumber];
         });
     });
 SPEC_END
