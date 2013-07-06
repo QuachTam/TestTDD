@@ -34,12 +34,8 @@ SPEC_BEGIN(class_BankAccount)
         });
         
         it(@"getAccount", ^{
-            BankAccount *bankAccount = [BankAccount nullMock];
-            BankAccountDao *accDao = [BankAccountDao nullMock];
-            [bankAccount stub:@selector(accountNumber) andReturn:accountNumber];
-            
-            BankAccount *bankAccountDao = [accDao getAccount:accountNumber];
-            
+            BankAccount *_bank = [sut getAcount:accountNumber];
+            [[_bank.accountNumber should] equal:accountNumber];
         });
     });
 SPEC_END
