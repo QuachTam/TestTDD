@@ -34,6 +34,7 @@ SPEC_BEGIN(class_BankAccount)
         });
         
         it(@"getAccount", ^{
+            BankAccountDao *sut = [BankAccountDao nullMock];
             BankAccount *_bank = [sut getAcount:accountNumber];
             [[_bank.accountNumber should] equal:accountNumber];
         });
