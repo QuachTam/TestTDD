@@ -26,8 +26,9 @@ SPEC_BEGIN(class_BankAccount)
         });
         
         it(@"open new account, balance = 0", ^{
-            BankAccount *_bankAccount = [[BankAccount alloc] init];
-            [[theValue(_bankAccount.balance) should] equal:theValue(0)];
+            BankAccount *_bankAcount = [[BankAccount alloc] init];
+            Account *_account = [_bankAcount openAccount];
+            [[theValue(_account.balance) should] equal:theValue(0)];
         });
         
         it(@"open new account, openTimestamp !nil", ^{
