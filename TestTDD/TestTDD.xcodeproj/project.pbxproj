@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E33F9071786A24B00093583 /* BankAccountDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E33F9061786A24B00093583 /* BankAccountDao.m */; };
 		6E3A76981783FD8000E38662 /* TestTDDTest0307.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A76971783FD8000E38662 /* TestTDDTest0307.m */; };
 		6E3A769B178402F500E38662 /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A769A178402F500E38662 /* BankAccount.m */; };
 		6E632B65177C161B00330994 /* TestTDDTest2706.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E632B64177C161B00330994 /* TestTDDTest2706.m */; };
@@ -49,8 +48,6 @@
 /* Begin PBXFileReference section */
 		3D148740F6214C7491F890AF /* libPods-TestTDDTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestTDDTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51A22D8EF72743ABBF989852 /* Pods-TestTDDTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestTDDTests.xcconfig"; path = "Pods/Pods-TestTDDTests.xcconfig"; sourceTree = SOURCE_ROOT; };
-		6E33F9051786A24B00093583 /* BankAccountDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountDao.h; sourceTree = "<group>"; };
-		6E33F9061786A24B00093583 /* BankAccountDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountDao.m; sourceTree = "<group>"; };
 		6E3A76971783FD8000E38662 /* TestTDDTest0307.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTDDTest0307.m; sourceTree = "<group>"; };
 		6E3A7699178402F500E38662 /* BankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccount.h; sourceTree = "<group>"; };
 		6E3A769A178402F500E38662 /* BankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount.m; sourceTree = "<group>"; };
@@ -163,8 +160,6 @@
 				6E9ECB3917815DA400BBB468 /* OBJ0107.m */,
 				6E3A7699178402F500E38662 /* BankAccount.h */,
 				6E3A769A178402F500E38662 /* BankAccount.m */,
-				6E33F9051786A24B00093583 /* BankAccountDao.h */,
-				6E33F9061786A24B00093583 /* BankAccountDao.m */,
 				6ED09D391765C03E00309647 /* Supporting Files */,
 			);
 			path = TestTDD;
@@ -354,7 +349,6 @@
 				6E9C367A177D677E0078BE07 /* OBJ2806.m in Sources */,
 				6E9ECB3A17815DA400BBB468 /* OBJ0107.m in Sources */,
 				6E3A769B178402F500E38662 /* BankAccount.m in Sources */,
-				6E33F9071786A24B00093583 /* BankAccountDao.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
