@@ -8,7 +8,7 @@
 
 #import "BankAccount.h"
 #import "BankAccountDao.h"
-
+#import "Account.h"
 @implementation BankAccount
 -(id)init{
     self = [super init];
@@ -16,6 +16,9 @@
         
     }
     return self;
+}
+- (Account*)openAccount{
+    return  [[Account alloc] init];
 }
 +(BankAccount*)getAccount:(NSString*)accountName{
     return [BankAccountDao getAccountWithAccountName:accountName];

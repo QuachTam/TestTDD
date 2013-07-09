@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Account.h"
 
 @interface BankAccount : NSObject{
    
 }
+- (Account*)openAccount;
 +(BankAccount*)getAccount:(NSString*)accountName;
 @end
