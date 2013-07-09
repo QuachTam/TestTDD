@@ -33,6 +33,9 @@ SPEC_BEGIN(class_BankAccount)
         });
         
         it(@"getAccount", ^{
+            
+            BankAccount *_bank = [BankAccount nullMock];
+            
             [[_bank.accountNumber should] equal:accountNumber];
         });
     });
