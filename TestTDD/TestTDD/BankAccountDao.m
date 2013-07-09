@@ -7,10 +7,11 @@
 //
 
 #import "BankAccountDao.h"
-#import "BankAccount.h"
+#import "Account.h"
+
 @implementation BankAccountDao
 
-+(BankAccount*)getAccountWithAccountName:(NSString*)accName{
++(Account*)getAccountWithAccountName:(NSString*)accName{
     return nil;
 }
 @end

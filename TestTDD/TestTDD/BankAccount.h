@@ -12,6 +12,5 @@
 @interface BankAccount : NSObject{
    
 }
-- (Account*)openAccount;
-+(Account*)getAccount:(NSString*)accountName;
+-(Account*)openAccount;
 @end

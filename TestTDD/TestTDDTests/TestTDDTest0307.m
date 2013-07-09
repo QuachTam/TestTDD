@@ -38,15 +38,12 @@ SPEC_BEGIN(class_BankAccount)
         });
         
         it(@"getAccount", ^{
+            //3 BankAccountDao select database return Account
+            //2 BankAcount getAccount From BankAccountDao
+            //1 Account from BankAcount --> Account.accountNumer == accountNumber
             
             
-            BankAccount *_bank = [BankAccount nullMock];
-            [_bank stub:@selector(getAccount:) andReturn:accountNumber];
-            
-            BankAccountDao *_bankDao = [BankAccountDao nullMock];
-            [_bankDao stub:@selector(getAccountWithAccountName:) andReturn:_bank withArguments:accountNumber];
-            
-            Account *_account = [_bank getAccount:accountNumber];
+            Account *_account = [BankAccount getAccount:accountNumber];
             [[_account.accountNumber should] equal:accountNumber];
         });
     });

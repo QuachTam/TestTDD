@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "BankAccount.h"
+#import "Account.h"
 @interface BankAccountDao : NSObject
--(BankAccount*)getAccount:(NSString*)accountName;
-+(BankAccount*)getAccountWithAccountName:(NSString*)accName;
++(Account*)getAccountWithAccountName:(NSString*)accName;
 @end
