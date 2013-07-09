@@ -41,9 +41,7 @@ SPEC_BEGIN(class_BankAccount)
             //3 BankAccountDao select database return Account
             //2 BankAcount getAccount From BankAccountDao
             //1 Account from BankAcount --> Account.accountNumer == accountNumber
-            
-            
-            Account *_account = [BankAccount getAccount:accountNumber];
+            Account *_account = [_bankAccount getAccount:accountNumber];
             [[_account.accountNumber should] equal:accountNumber];
         });
     });
