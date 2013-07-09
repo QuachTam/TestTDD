@@ -20,7 +20,7 @@
 - (Account*)openAccount{
     return  [[Account alloc] init];
 }
-+(BankAccount*)getAccount:(NSString*)accountName{
++(Account*)getAccount:(NSString*)accountName{
     return [BankAccountDao getAccountWithAccountName:accountName];
 }
 @end

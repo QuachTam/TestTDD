@@ -36,17 +36,18 @@ SPEC_BEGIN(class_BankAccount)
             Account *_account = [_bankAccount openAccount];
             [_account.openTimestamp shouldNotBeNil];
         });
-//        
-//        it(@"getAccount", ^{
-//            
-//            BankAccount *_bank = [BankAccount nullMock];
-//            [_bank stub:@selector(accountNumber) andReturn:accountNumber];
-//            
-//            BankAccountDao *_bankDao = [BankAccountDao nullMock];
-//            [_bankDao stub:@selector(getAccountWithAccountName:) andReturn:_bank withArguments:accountNumber];
-//            
-//            BankAccount *_bankGet = [_bank getAccount:accountNumber];
-//            [[_bankGet.accountNumber should] equal:accountNumber];
-//        });
+        
+        it(@"getAccount", ^{
+            
+            
+            BankAccount *_bank = [BankAccount nullMock];
+            [_bank stub:@selector(getAccount:) andReturn:accountNumber];
+            
+            BankAccountDao *_bankDao = [BankAccountDao nullMock];
+            [_bankDao stub:@selector(getAccountWithAccountName:) andReturn:_bank withArguments:accountNumber];
+            
+            Account *_account = [_bank getAccount:accountNumber];
+            [[_account.accountNumber should] equal:accountNumber];
+        });
     });
 SPEC_END

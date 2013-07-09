@@ -13,5 +13,5 @@
    
 }
 - (Account*)openAccount;
-+(BankAccount*)getAccount:(NSString*)accountName;
++(Account*)getAccount:(NSString*)accountName;
 @end
