@@ -33,7 +33,8 @@ SPEC_BEGIN(class_BankAccount)
         
         it(@"open new account, openTimestamp !nil", ^{
             BankAccount *_bankAccount = [[BankAccount alloc] init];
-            [_bankAccount.openTimestamp shouldNotBeNil];
+            Account *_account = [_bankAccount openAccount];
+            [_account.openTimestamp shouldNotBeNil];
         });
 //        
 //        it(@"getAccount", ^{
