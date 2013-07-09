@@ -36,6 +36,9 @@ SPEC_BEGIN(class_BankAccount)
             
             BankAccount *_bank = [BankAccount nullMock];
             [_bank stub:@selector(accountNumber) andReturn:accountNumber];
+            
+            BankAccountDao *_bankDao = [BankAccountDao nullMock];
+            
             [[_bank.accountNumber should] equal:accountNumber];
         });
     });
