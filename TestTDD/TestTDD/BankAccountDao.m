@@ -9,10 +9,8 @@
 #import "BankAccountDao.h"
 #import "BankAccount.h"
 @implementation BankAccountDao
--(BankAccount*)getAccount:(NSString*)accountName{
-    return [BankAccountDao getAccountWithAccountName:accountName];
-}
--(BankAccount*)getAccountWithAccountName:(NSString*)accName{
+
++(BankAccount*)getAccountWithAccountName:(NSString*)accName{
     return nil;
 }
 @end
