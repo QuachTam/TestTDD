@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6E3A76981783FD8000E38662 /* TestTDDTest0307.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A76971783FD8000E38662 /* TestTDDTest0307.m */; };
 		6E3A769B178402F500E38662 /* BankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A769A178402F500E38662 /* BankAccount.m */; };
+		6E520D19178BEA0700B45848 /* BankAccountDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E520D18178BEA0700B45848 /* BankAccountDao.m */; };
 		6E632B65177C161B00330994 /* TestTDDTest2706.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E632B64177C161B00330994 /* TestTDDTest2706.m */; };
 		6E632B6B177C16EE00330994 /* OBJ2706.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E632B6A177C16EE00330994 /* OBJ2706.m */; };
 		6E9980F9177AC5040028A1F7 /* TestTDDTest2606.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9980F8177AC5040028A1F7 /* TestTDDTest2606.m */; };
@@ -51,6 +52,8 @@
 		6E3A76971783FD8000E38662 /* TestTDDTest0307.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTDDTest0307.m; sourceTree = "<group>"; };
 		6E3A7699178402F500E38662 /* BankAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccount.h; sourceTree = "<group>"; };
 		6E3A769A178402F500E38662 /* BankAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccount.m; sourceTree = "<group>"; };
+		6E520D17178BEA0700B45848 /* BankAccountDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankAccountDao.h; sourceTree = "<group>"; };
+		6E520D18178BEA0700B45848 /* BankAccountDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BankAccountDao.m; sourceTree = "<group>"; };
 		6E632B64177C161B00330994 /* TestTDDTest2706.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTDDTest2706.m; sourceTree = "<group>"; };
 		6E632B69177C16EE00330994 /* OBJ2706.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJ2706.h; sourceTree = "<group>"; };
 		6E632B6A177C16EE00330994 /* OBJ2706.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBJ2706.m; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 				6E9ECB3917815DA400BBB468 /* OBJ0107.m */,
 				6E3A7699178402F500E38662 /* BankAccount.h */,
 				6E3A769A178402F500E38662 /* BankAccount.m */,
+				6E520D17178BEA0700B45848 /* BankAccountDao.h */,
+				6E520D18178BEA0700B45848 /* BankAccountDao.m */,
 				6ED09D391765C03E00309647 /* Supporting Files */,
 			);
 			path = TestTDD;
@@ -349,6 +354,7 @@
 				6E9C367A177D677E0078BE07 /* OBJ2806.m in Sources */,
 				6E9ECB3A17815DA400BBB468 /* OBJ0107.m in Sources */,
 				6E3A769B178402F500E38662 /* BankAccount.m in Sources */,
+				6E520D19178BEA0700B45848 /* BankAccountDao.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
