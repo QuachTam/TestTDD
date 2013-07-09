@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 #import "BankAccount.h"
 @interface BankAccountDao : NSObject
-+(BankAccount*)getAccount:(NSString*)accountName;
+-(BankAccount*)getAccount:(NSString*)accountName;
 @end
