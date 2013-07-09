@@ -40,7 +40,11 @@ SPEC_BEGIN(class_BankAccount)
             
             BankAccountDao *_bankDao = [BankAccountDao nullMock];
             
-            [[_bank.accountNumber should] equal:accountNumber];
+            BankAccount *_bankGet = [_bankDao getAccount:accountNumber];
+            
+            BankAccount *_bankNew = [BankAccount nullMock];
+            
+            [[_bankNew.accountNumber should] equal:accountNumber];
         });
     });
 SPEC_END
