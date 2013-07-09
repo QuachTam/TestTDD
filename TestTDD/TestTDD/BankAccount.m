@@ -19,7 +19,7 @@
 - (Account*)openAccount{
     return  [[Account alloc] init];
 }
-+(Account*)getAccount:(NSString*)accName{
+-(Account*)getAccount:(NSString*)accName{
     return nil;
 }
 @end

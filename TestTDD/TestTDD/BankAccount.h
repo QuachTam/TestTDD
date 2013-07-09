@@ -13,5 +13,5 @@
    
 }
 -(Account*)openAccount;
-+(Account*)getAccount:(NSString*)accName;
+-(Account*)getAccount:(NSString*)accName;
 @end
