@@ -41,10 +41,14 @@ SPEC_BEGIN(class_BankAccount)
             //3 BankAccountDao select database return Account
             //2 BankAcount getAccount From BankAccountDao
             //1 Account from BankAcount --> Account.accountNumer == accountNumber
+            
             Account *_accountGet = [Account nullMock];
             [_accountGet stub:@selector(accountNumber) andReturn:accountNumber];
+            
             BankAccount *_bankAccount = [BankAccount nullMock];
             [_bankAccount stub:@selector(getAccount:) andReturn:_accountGet];
+            
+            
             
             Account *_account = [_bankAccount getAccount:accountNumber];
             [[_account.accountNumber should] equal:accountNumber];
