@@ -14,10 +14,8 @@
 SPEC_BEGIN(class_BankAccount)
     describe(@"Open new BankAccount", ^{
         __block NSString *accountNumber;
-        __block BankAccount *_bankAccount;
         beforeEach(^{
             accountNumber = [NSString nullMock];
-            _bankAccount = [[BankAccount alloc] init];
         });
         
         it(@"open new account, accountNumber !nil", ^{
@@ -42,7 +40,7 @@ SPEC_BEGIN(class_BankAccount)
             //3 BankAccount get Account from BankAccountDao
             //2 get Acount from BankAcount
             //1 _account.accountNumber == accountNumber
-            
+            BankAccount *_bank = [[BankAccount alloc] init];
             Account *_account = [_bank getAccount:accountNumber];
             [[_account.accountNumber should] equal:accountNumber];
         });
