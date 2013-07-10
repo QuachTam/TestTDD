@@ -8,6 +8,7 @@
 
 #import "BankAccount.h"
 #import "Account.h"
+
 @implementation BankAccount
 -(id)init{
     self = [super init];
@@ -19,7 +20,5 @@
 - (Account*)openAccount{
     return  [[Account alloc] init];
 }
--(Account*)getAccount:(NSString*)accName{
-    return nil;
-}
+
 @end
