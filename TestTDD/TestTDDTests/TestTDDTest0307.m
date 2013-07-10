@@ -43,7 +43,7 @@ SPEC_BEGIN(class_BankAccount)
             //2 get Acount from BankAcount
             //1 _account.accountNumber == accountNumber
             
-            
+            Account *_account = [_bank getAccount:accountNumber];
             [[_account.accountNumber should] equal:accountNumber];
         });
     });
