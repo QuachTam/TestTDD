@@ -37,7 +37,12 @@ SPEC_BEGIN(class_BankAccount)
             Account *_account = [_bankAccount openAccount];
             [_account.openTimestamp shouldNotBeNil];
         });
-        
+        it(@"get Account", ^{
+            //4 BankAccountDao select database return Account
+            //3 BankAccount get Account from BankAccountDao
+            //2 get Acount from BankAcount
+            //1 _account.accountNumber == accountNumber
+        });
     });
 SPEC_END
 
