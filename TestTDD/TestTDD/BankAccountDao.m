@@ -11,5 +11,7 @@
 
 @implementation BankAccountDao
 
-
++(Account*)getAccountWithAccountNumber:(NSString*)accName{
+    return nil;
+}
 @end
