@@ -41,6 +41,7 @@ SPEC_BEGIN(class_BankAccount)
             //2 get Acount from BankAcount
             //1 _account.accountNumber == accountNumber
             
+            [BankAccountDao stub:@selector(getAccountWithAccountNumber:) andReturn:_accountGet withArguments:accountNumber];
             
             BankAccount *_bank = [[BankAccount alloc] init];
             Account *_account = [_bank getAccount:accountNumber];
