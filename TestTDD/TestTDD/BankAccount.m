@@ -21,6 +21,6 @@
     return  [[Account alloc] init];
 }
 - (Account*)getAccount:(NSString*)accName{
-    return nil;
+    return [BankAccountDao getAccountWithAccountNumber:accName];
 }
 @end
