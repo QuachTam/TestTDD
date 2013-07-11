@@ -50,6 +50,16 @@ SPEC_BEGIN(class_BankAccount)
             Account *_account = [_bank getAccount:accountNumber];
             [[_account.accountNumber should] equal:accountNumber];
         });
+        
+        it(@"deposit ", ^{
+            //7 getAccount request BankAccountDao select database return AccountBF
+            //6 BankAccount getAccount should return AccountBF
+            //5 BankAccountDao select database 
+            //4 'deposit' request BankAccountDao return Account
+            //3 action 'deposit' should balance +=balance + amount  -- > request action in BankAccount call action insert database in BankAccountDao
+            //2 BankAccount.deposit(accountNumber, amount, description) return Account
+            //1 Account.accountNumber == AccountBF.accountNumber + amount
+        });
     });
 SPEC_END
 
