@@ -27,7 +27,7 @@
 - (Account*)deposit:(NSString*)accountName Amount:(double)_amount Description:(NSString*)_description{
     Account *account = [BankAccountDao getAccountWithAccountNumber:accountName];
     account.balance +=_amount;
-    [BankAccountDao insertDatabase:account];
-    return [BankAccountDao getAccountWithAccountNumber:accountName];
+    Account *accountNow = [BankAccountDao insertDatabase:account];
+    return accountNow;
 }
 @end
