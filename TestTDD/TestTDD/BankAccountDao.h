@@ -11,4 +11,5 @@
 
 @interface BankAccountDao : NSObject
 +(Account*)getAccountWithAccountNumber:(NSString*)accName;
++(void)insertDatabase:(Account*)account;
 @end
