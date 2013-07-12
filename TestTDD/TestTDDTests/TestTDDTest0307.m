@@ -14,6 +14,7 @@
 SPEC_BEGIN(class_BankAccount)
     describe(@"Open new BankAccount", ^{
         __block NSString *accountNumber;
+        __block NSInteger amount;
         beforeEach(^{
             accountNumber = [NSString nullMock];
         });
@@ -59,6 +60,9 @@ SPEC_BEGIN(class_BankAccount)
             //3 action 'deposit' should balance +=balance + amount  -- > request action in BankAccount call action insert database in BankAccountDao
             //2 BankAccount.deposit(accountNumber, amount, description) return Account
             //1 Account.accountNumber == AccountBF.accountNumber + amount
+            
+            
+            [[account.accountNumber should] equal:accountBF.accountNumber+amount];
         });
     });
 SPEC_END
