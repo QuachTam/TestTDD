@@ -14,9 +14,11 @@
 SPEC_BEGIN(class_BankAccount)
     describe(@"Open new BankAccount", ^{
         __block NSString *accountNumber;
-        __block NSInteger amount;
+        __block double amount;
+        __block NSString *description;
         beforeEach(^{
             accountNumber = [NSString nullMock];
+            description = [NSString nullMock];
         });
         
         it(@"open new account, accountNumber !nil", ^{
@@ -59,10 +61,12 @@ SPEC_BEGIN(class_BankAccount)
             //4 'deposit' request BankAccountDao return Account
             //3 action 'deposit' should balance +=balance + amount  -- > request action in BankAccount call action insert database in BankAccountDao
             //2 BankAccount.deposit(accountNumber, amount, description) return Account
-            //1 Account.accountNumber == AccountBF.accountNumber + amount
+            //1 Account.balance == AccountBF.balance + amount
+            BankAccount *_bank = [[BankAccount alloc] init];
+            Account *accountBF = [_bank getAccount:accountNumber];
             
-            
-            [[account.accountNumber should] equal:accountBF.accountNumber+amount];
+            Account *account = [_bank deposit:accountNumber Amount:amount Description:description];
+            [[theValue(account.balance) should] equal:theValue(accountBF.balance+amount)];
         });
     });
 SPEC_END
