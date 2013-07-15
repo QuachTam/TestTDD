@@ -16,6 +16,7 @@ SPEC_BEGIN(class_BankAccount)
         __block NSString *accountNumber;
         __block double amount;
         __block NSString *description;
+        __block double balance;
         beforeEach(^{
             accountNumber = [NSString nullMock];
             description = [NSString nullMock];
@@ -62,6 +63,10 @@ SPEC_BEGIN(class_BankAccount)
             //3 action 'deposit' should balance +=balance + amount  -- > request action in BankAccount call action insert database in BankAccountDao
             //2 BankAccount.deposit(accountNumber, amount, description) return Account
             //1 Account.balance == AccountBF.balance + amount
+            
+            Account *_accountGet = [Account nullMock];
+            [BankAccountDao stub:@selector(getAccountWithAccountNumber:) andReturn:_accountGet withArguments:accountNumber];
+            
             BankAccount *_bank = [[BankAccount alloc] init];
             Account *accountBF = [_bank getAccount:accountNumber];
             
