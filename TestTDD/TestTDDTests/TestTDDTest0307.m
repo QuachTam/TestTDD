@@ -10,7 +10,6 @@
 #import "BankAccount.h"
 #import "BankAccountDao.h"
 #import "Account.h"
-#import "AccountLog.h"
 SPEC_BEGIN(class_BankAccount)
     describe(@"Open new BankAccount", ^{
         __block NSString *accountNumber;
@@ -81,9 +80,13 @@ SPEC_BEGIN(class_BankAccount)
             //1 AccountLog.timestamp = dateNow
             NSDate *_dateNow = [NSDate nullMock];
             
-            AccountLog *_accountLog = [AccountLog nullMock];
-
-            [[theValue(_accountLog._timestamp) should] equal: theValue(_dateNow)];
+            Account *_accountTimestamp = [Account nullMock];
+            [_accountTimestamp stub:@selector(_timestamp) andReturn:_dateNow];
+            
+            BankAccount *_bank = [[BankAccount alloc] init];
+            [_bank deposit:accountNumber Amount:10 Description:@"desciption"];
+            
+            [[theValue(_accountTimestamp._timestamp) should] equal: theValue(_dateNow)];
         });
     });
 SPEC_END

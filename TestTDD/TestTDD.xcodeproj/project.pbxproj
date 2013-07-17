@@ -19,7 +19,6 @@
 		6E9C367A177D677E0078BE07 /* OBJ2806.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9C3679177D677E0078BE07 /* OBJ2806.m */; };
 		6E9ECB3717815D1900BBB468 /* TestTDDTest0107.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9ECB3617815D1900BBB468 /* TestTDDTest0107.m */; };
 		6E9ECB3A17815DA400BBB468 /* OBJ0107.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9ECB3917815DA400BBB468 /* OBJ0107.m */; };
-		6EC7DBD417967BB600B1873E /* AccountLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EC7DBD317967BB600B1873E /* AccountLog.m */; };
 		6ED09D331765C03E00309647 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D321765C03E00309647 /* UIKit.framework */; };
 		6ED09D351765C03E00309647 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D341765C03E00309647 /* Foundation.framework */; };
 		6ED09D371765C03E00309647 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED09D361765C03E00309647 /* CoreGraphics.framework */; };
@@ -70,8 +69,6 @@
 		6E9ECB3617815D1900BBB468 /* TestTDDTest0107.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTDDTest0107.m; sourceTree = "<group>"; };
 		6E9ECB3817815DA400BBB468 /* OBJ0107.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJ0107.h; sourceTree = "<group>"; };
 		6E9ECB3917815DA400BBB468 /* OBJ0107.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBJ0107.m; sourceTree = "<group>"; };
-		6EC7DBD217967BB600B1873E /* AccountLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountLog.h; sourceTree = "<group>"; };
-		6EC7DBD317967BB600B1873E /* AccountLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountLog.m; sourceTree = "<group>"; };
 		6ED09D2F1765C03E00309647 /* TestTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED09D321765C03E00309647 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		6ED09D341765C03E00309647 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -171,8 +168,6 @@
 				6E520D1B178BEEC800B45848 /* Account.m */,
 				6E3A7699178402F500E38662 /* BankAccount.h */,
 				6E3A769A178402F500E38662 /* BankAccount.m */,
-				6EC7DBD217967BB600B1873E /* AccountLog.h */,
-				6EC7DBD317967BB600B1873E /* AccountLog.m */,
 				6E520D17178BEA0700B45848 /* BankAccountDao.h */,
 				6E520D18178BEA0700B45848 /* BankAccountDao.m */,
 				6ED09D391765C03E00309647 /* Supporting Files */,
@@ -366,7 +361,6 @@
 				6E3A769B178402F500E38662 /* BankAccount.m in Sources */,
 				6E520D19178BEA0700B45848 /* BankAccountDao.m in Sources */,
 				6E520D1C178BEEC800B45848 /* Account.m in Sources */,
-				6EC7DBD417967BB600B1873E /* AccountLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

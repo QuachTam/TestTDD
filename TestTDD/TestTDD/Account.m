@@ -11,13 +11,14 @@
 @implementation Account
 @synthesize accountNumber;
 @synthesize balance;
-@synthesize openTimestamp;
+@synthesize openTimestamp, _timestamp, _description, amount;
 -(id)init{
     self = [super init];
     if (self) {
         accountNumber = [[NSString alloc] init];
         balance = 0.0;
         openTimestamp = [[NSDate alloc] init];
+        _timestamp = [[NSDate alloc] init];
     }
     return self;
 }
