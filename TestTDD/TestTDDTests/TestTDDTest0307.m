@@ -10,7 +10,7 @@
 #import "BankAccount.h"
 #import "BankAccountDao.h"
 #import "Account.h"
-
+#import "AccountLog.h"
 SPEC_BEGIN(class_BankAccount)
     describe(@"Open new BankAccount", ^{
         __block NSString *accountNumber;
@@ -74,13 +74,16 @@ SPEC_BEGIN(class_BankAccount)
         });
         
         it(@"mock timestamp deposit", ^{
-            //3 BankAccount call deposit ---> DAO call action insert AccountLog (accountNumber, timestamp, amount, desciption)
+            
+            //4 BankAccount call deposit ---> DAO action insert AccountLog (accountNumber, timestamp, amount, desciption)
+            //3 mock NSDate *dateNow
             //2 create AccountLog with object accountNumber, timestamp, amount, description;
             //1 AccountLog.timestamp = dateNow
+            NSDate *_dateNow = [NSDate nullMock];
             
-            
-            
-            [[theValue(_accountLog.timestamp) should] equal: theValue(dateNow)];
+            AccountLog *_accountLog = [AccountLog nullMock];
+
+            [[theValue(_accountLog._timestamp) should] equal: theValue(_dateNow)];
         });
     });
 SPEC_END
