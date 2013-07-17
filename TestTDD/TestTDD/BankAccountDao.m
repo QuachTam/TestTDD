@@ -18,4 +18,7 @@
     return NO;
     //insert database
 }
++(BOOL)insertTimestamp:(NSDate*)_dateNow{
+    return NO;
+}
 @end

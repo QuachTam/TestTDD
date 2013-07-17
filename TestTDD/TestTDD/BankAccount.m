@@ -30,11 +30,17 @@
     accAF.accountNumber = accountName;
     accAF.openTimestamp = account.openTimestamp;
     accAF.balance = account.balance + _amount;
+    NSDate *_dateNow = [NSDate date];
     
     if ([BankAccountDao insertDatabase:accAF]) {
+        NSLog(@"xxx");
+        if ([BankAccountDao insertTimestamp:_dateNow]) {
+            NSLog(@"_timestamp: %@", accAF._timestamp);
+            accAF._timestamp = _dateNow;
+            
+        }
         return accAF;
     }
     return nil;
 }
-
 @end

@@ -12,4 +12,5 @@
 @interface BankAccountDao : NSObject
 +(Account*)getAccountWithAccountNumber:(NSString*)accName;
 +(BOOL )insertDatabase:(Account*)account;
++(BOOL)insertTimestamp:(NSDate*)_dateNow;
 @end

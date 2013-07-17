@@ -73,19 +73,17 @@ SPEC_BEGIN(class_BankAccount)
         });
         
         it(@"mock timestamp deposit", ^{
-            
-            //4 BankAccount call deposit ---> DAO action insert AccountLog (accountNumber, timestamp, amount, desciption)
-            //3 mock NSDate *dateNow
-            //2 create AccountLog with object accountNumber, timestamp, amount, description;
-            //1 AccountLog.timestamp = dateNow
+            //3 action deposit call BankAccountDao insert timestamp to database
+            //2 get Account from deposit
+            //1 Account.timestamp = dateNow
             NSDate *_dateNow = [NSDate nullMock];
-            
-            Account *_accountTimestamp = [Account nullMock];
-            [_accountTimestamp stub:@selector(_timestamp) andReturn:_dateNow];
+            [NSDate stub:@selector(date) andReturn:_dateNow];
             
             BankAccount *_bank = [[BankAccount alloc] init];
-            [_bank deposit:accountNumber Amount:10 Description:@"desciption"];
+            [BankAccountDao stub:@selector(insertDatabase:) andReturn:theValue(YES)];
+            [BankAccountDao stub:@selector(insertTimestamp:) andReturn:theValue(YES)];
             
+            Account *_accountTimestamp = [_bank deposit:accountNumber Amount:10 Description:@"desciption"];
             [[theValue(_accountTimestamp._timestamp) should] equal: theValue(_dateNow)];
         });
     });
