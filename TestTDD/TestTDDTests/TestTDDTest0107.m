@@ -38,13 +38,13 @@ SPEC_BEGIN(OBJ0107_class)
             [[theValue([OBJ0107 cal:@"//;\n2;3"]) should] equal: theValue(5)];
         });
         
-        it(@"string input 1,2,-3 equal 3", ^{
-            [[theValue([OBJ0107 cal:@"1,2,-3"]) should] equal: theValue(3)];
-            theBlock(^{
-                NSException *exception = [NSException exceptionWithName:@"negatives not allowed" reason:@"negatives not allowed" userInfo:nil];
-                [exception raise];
-            });
-        });
+//        it(@"string input 1,2,-3 equal 3", ^{
+//            [[theValue([OBJ0107 cal:@"1,2,-3"]) should] equal: theValue(3)];
+//            theBlock(^{
+//                NSException *exception = [NSException exceptionWithName:@"negatives not allowed" reason:@"negatives not allowed" userInfo:nil];
+//                [exception raise];
+//            });
+//        });
         it(@"string input 2,5,1002,3000 equal 7", ^{
             [[theValue([OBJ0107 cal:@"2,5,1002,3000"]) should] equal: theValue(7)];
         });

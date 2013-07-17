@@ -14,8 +14,8 @@
 +(Account*)getAccountWithAccountNumber:(NSString*)accName{
     return nil;
 }
-+(Account*)insertDatabase:(Account*)account{
-    return nil;
++(BOOL )insertDatabase:(Account*)account{
+    return NO;
     //insert database
 }
 @end

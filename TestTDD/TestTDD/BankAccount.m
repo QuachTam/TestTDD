@@ -25,9 +25,15 @@
     return [BankAccountDao getAccountWithAccountNumber:accName];
 }
 - (Account*)deposit:(NSString*)accountName Amount:(double)_amount Description:(NSString*)_description{
-    Account *account = [BankAccountDao getAccountWithAccountNumber:accountName];
-    account.balance +=_amount;
-    Account *accountNow = [BankAccountDao insertDatabase:account];
-    return accountNow;
+    Account *account = [self getAccount:accountName];
+    Account *accAF = [[Account alloc] init];
+    accAF.accountNumber = accountName;
+    accAF.openTimestamp = account.openTimestamp;
+    accAF.balance = account.balance + _amount;
+    
+    if ([BankAccountDao insertDatabase:accAF]) {
+        return accAF;
+    }
+    return nil;
 }
 @end

@@ -14,9 +14,7 @@
 SPEC_BEGIN(class_BankAccount)
     describe(@"Open new BankAccount", ^{
         __block NSString *accountNumber;
-        __block double amount;
         __block NSString *description;
-        __block double balance;
         beforeEach(^{
             accountNumber = [NSString nullMock];
             description = [NSString nullMock];
@@ -63,15 +61,26 @@ SPEC_BEGIN(class_BankAccount)
             //3 action 'deposit' should balance +=balance + amount  -- > request action in BankAccount call action insert database in BankAccountDao
             //2 BankAccount.deposit(accountNumber, amount, description) return Account
             //1 Account.balance == AccountBF.balance + amount
-            
-            Account *_accountGet = [Account nullMock];
-            [BankAccountDao stub:@selector(getAccountWithAccountNumber:) andReturn:_accountGet withArguments:accountNumber];
-            
             BankAccount *_bank = [[BankAccount alloc] init];
-            Account *accountBF = [_bank getAccount:accountNumber];
+            Account *_bankBefore = [Account nullMock];
+            Account *_bankAfter;
             
-            Account *account = [_bank deposit:accountNumber Amount:amount Description:description];
-            [[theValue(account.balance) should] equal:theValue(accountBF.balance+amount)];
+            [BankAccountDao stub:@selector(insertDatabase:) andReturn:theValue(YES)];
+            [_bankBefore stub:@selector(balance) andReturn:theValue(10)];
+            [_bank stub:@selector(getAccount:) andReturn:_bankBefore];
+            
+            _bankAfter = [_bank deposit:accountNumber Amount:10 Description:@"deposit"];
+            [[theValue(_bankAfter.balance) should] equal:theValue(_bankBefore.balance + 10)];
+        });
+        
+        it(@"mock timestamp deposit", ^{
+            //3 BankAccount call deposit ---> DAO call action insert AccountLog (accountNumber, timestamp, amount, desciption)
+            //2 create AccountLog with object accountNumber, timestamp, amount, description;
+            //1 AccountLog.timestamp = dateNow
+            
+            
+            
+            [[theValue(_accountLog.timestamp) should] equal: theValue(dateNow)];
         });
     });
 SPEC_END
