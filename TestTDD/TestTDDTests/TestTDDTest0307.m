@@ -86,6 +86,15 @@ SPEC_BEGIN(class_BankAccount)
             Account *_accountTimestamp = [_bank deposit:accountNumber Amount:10 Description:@"desciption"];
             [[theValue(_accountTimestamp._timestamp) should] equal: theValue(_dateNow)];
         });
+        
+        it(@"withdraw", ^{
+            //6 stub accountBefore.balance should return balance
+            //5 accountBankDao stub withdrawWithaccountNumber should return Account with account.balance = account.balance - amount
+            //4 accountBank call withdrawWithaccountNumber in accountBankDao
+            //3 create accountBank, accountBefore
+            //2 create acountAfter = accountBank.withdraw(accountNumber, amount, description)
+            //1 acountAfter.balance = accountBefore.balance - amount
+        });
     });
 SPEC_END
 

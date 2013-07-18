@@ -33,11 +33,8 @@
     NSDate *_dateNow = [NSDate date];
     
     if ([BankAccountDao insertDatabase:accAF]) {
-        NSLog(@"xxx");
         if ([BankAccountDao insertTimestamp:_dateNow]) {
-            NSLog(@"_timestamp: %@", accAF._timestamp);
             accAF._timestamp = _dateNow;
-            
         }
         return accAF;
     }
