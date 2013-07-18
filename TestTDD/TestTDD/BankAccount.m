@@ -21,6 +21,11 @@
 - (Account*)openAccount{
     return  [[Account alloc] init];
 }
+
+- (Account*)withdraw:(NSString*)_accName Amount:(double)_amount Description:(NSString*)_description{
+    return  nil;
+}
+
 - (Account*)getAccount:(NSString*)accName{
     return [BankAccountDao getAccountWithAccountNumber:accName];
 }

@@ -15,4 +15,5 @@
 - (Account*)openAccount;
 - (Account*)getAccount:(NSString*)accName;
 - (Account*)deposit:(NSString*)accountName Amount:(double)_amount Description:(NSString*)_description;
+- (Account*)withdraw:(NSString*)_accName Amount:(double)_amount Description:(NSString*)_description;
 @end
