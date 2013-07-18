@@ -23,7 +23,13 @@
 }
 
 - (Account*)withdraw:(NSString*)_accName Amount:(double)_amount Description:(NSString*)_description{
-    return  nil;
+    Account *_account = [self getAccount:_accName];
+    Account *_accountAF = _account;
+    _accountAF.balance -= _amount;
+    if ([BankAccountDao insertDatabase:_accountAF]) {
+        return _accountAF;
+    }
+    return nil;
 }
 
 - (Account*)getAccount:(NSString*)accName{
