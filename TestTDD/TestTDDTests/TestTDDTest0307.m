@@ -94,6 +94,8 @@ SPEC_BEGIN(class_BankAccount)
             //3 create accountBank, accountBefore
             //2 create acountAfter = accountBank.withdraw(accountNumber, amount, description)
             //1 acountAfter.balance = accountBefore.balance - amount
+            
+            [[theValue(_accountAfter.balance) should] equal: theValue(_accountBefore.balance - 10)];
         });
     });
 SPEC_END
