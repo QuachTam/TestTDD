@@ -104,6 +104,17 @@ SPEC_BEGIN(class_BankAccount)
             Account *_accountAfter = [_accountBank withdraw:accountNumber Amount:10 Description:@"description"];
             [[theValue(_accountAfter.balance) should] equal: theValue(_accountBefore.balance - 10)];
         });
+        
+        it(@"timestamp withdraw", ^{
+            //6 check call action inserttimestamp in BankAccountDao
+            //5 check call action insert database in BankAccountDao
+            //4 create _bank
+            //3 create _account = _bank.withdraw
+            //2 create _dateNow
+            //1 account._timestamp = _dateNow
+            
+            [[theValue(_account._timestamp) should] equal: theValue(_dateNow)];
+        });
     });
 SPEC_END
 
