@@ -26,7 +26,12 @@
     Account *_account = [self getAccount:_accName];
     Account *_accountAF = _account;
     _accountAF.balance -= _amount;
+    
+    NSDate *_dateNow = [NSDate date];
     if ([BankAccountDao insertDatabase:_accountAF]) {
+        if ([BankAccountDao insertTimestamp:_dateNow]) {
+            _accountAF._timestamp = _dateNow;
+        }
         return _accountAF;
     }
     return nil;
