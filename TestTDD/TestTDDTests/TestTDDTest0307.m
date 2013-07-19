@@ -113,14 +113,17 @@ SPEC_BEGIN(class_BankAccount)
             //3 create _account = _bank.withdraw
             //2 create _dateNow
             //1 account._timestamp = _dateNow
-            [BankAccountDao stub:@selector(insertTimestamp:) andReturn:theValue(YES)];
-            [BankAccountDao stub:@selector(insertDatabase:) andReturn:theValue(YES)];
-            
-            BankAccount *_bank = [[BankAccount alloc] init];
-            Account *_account = [_bank withdraw:accountNumber Amount:-10 Description:@"description"];
             NSDate *_dateNow = [NSDate nullMock];
             [NSDate stub:@selector(date) andReturn:_dateNow];
-            [[theValue(_account._timestamp) should] equal: theValue(_dateNow)];
+            
+            BankAccount *_bank = [[BankAccount alloc] init];
+            
+            [BankAccountDao stub:@selector(insertDatabase:) andReturn:theValue(YES)];
+            [BankAccountDao stub:@selector(insertTimestamp:) andReturn:theValue(YES)];
+            
+            Account *_account = [_bank withdraw:accountNumber Amount:-10 Description:@"description"];
+            
+            [[theValue(_account._timestamp) should] equal:theValue(_dateNow)];
         });
     });
 SPEC_END

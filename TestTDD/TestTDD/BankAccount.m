@@ -30,6 +30,7 @@
     NSDate *_dateNow = [NSDate date];
     if ([BankAccountDao insertDatabase:_accountAF]) {
         if ([BankAccountDao insertTimestamp:_dateNow]) {
+            NSLog(@"xxxxxxxxxx");
             _accountAF._timestamp = _dateNow;
         }
         return _accountAF;
