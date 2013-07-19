@@ -112,7 +112,9 @@ SPEC_BEGIN(class_BankAccount)
             //3 create _account = _bank.withdraw
             //2 create _dateNow
             //1 account._timestamp = _dateNow
-            
+            BankAccount *_bank = [[BankAccount alloc] init];
+            Account *_account = [_bank withdraw:accountNumber Amount:-10 Description:@"description"];
+            NSDate *_dateNow = [NSDate nullMock];
             [[theValue(_account._timestamp) should] equal: theValue(_dateNow)];
         });
     });
