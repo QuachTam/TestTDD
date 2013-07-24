@@ -116,13 +116,14 @@ SPEC_BEGIN(class_BankAccount)
             NSDate *_dateNow = [NSDate nullMock];
             [NSDate stub:@selector(date) andReturn:_dateNow];
             
+            Account *_accounts = [Account nullMock];
             BankAccount *_bank = [[BankAccount alloc] init];
+            [_bank stub:@selector(getAccount:) andReturn:_accounts];
             
             [BankAccountDao stub:@selector(insertDatabase:) andReturn:theValue(YES)];
             [BankAccountDao stub:@selector(insertTimestamp:) andReturn:theValue(YES)];
             
             Account *_account = [_bank withdraw:accountNumber Amount:-10 Description:@"description"];
-            
             [[theValue(_account._timestamp) should] equal:theValue(_dateNow)];
         });
     });
